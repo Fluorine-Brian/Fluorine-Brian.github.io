@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Xinyu Fu/Personal Homepage"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : &name "Xinyu Fu"
+description              : &description "an undergraduate student in biomedical engineering from South China University of Technology"
 url                      : https://Fluorine-Brian.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Fluorine-Brian/Fluorine-Brian.github.io"
