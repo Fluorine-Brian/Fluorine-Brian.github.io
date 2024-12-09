@@ -9,7 +9,7 @@ redirect_from:
 
 I am a second year undergraduate student from [South China University of Technology](https://www.scut.edu.cn/en/), major in biomedical engineering. My research interest includes brain-computer interface, medical artificial intelligence, bioinformatics and intelligent medical systems.
 
-I am now under the supervisisn of [Dr. Shu Lin](https://www2.scut.edu.cn/ft/2021/1102/c29779a449585/page.htm),  exploring a multi-scale residual network EEG emotion classification algorithm based on graph networks and mambaformer model. I am also a student research program's student in the [Healthcare Data and Medical Intelligence Laboratory](http://hdmilab.cn/), aiming to develop an intelligent assisted diagnostic algorithm for OCT of the anterior segment based on GAN and SAM model. 
+I am now under the supervisisn of [Dr. Shu Lin](https://www2.scut.edu.cn/ft/2021/1102/c29779a449585/page.htm) at the Mixed Reality and Intelligent Interaction Laboratory, exploring a multi-scale residual network EEG emotion classification algorithm based on graph networks and mambaformer model. I am also a student research program's student in the [Healthcare Data and Medical Intelligence Laboratory](http://hdmilab.cn/), aiming to develop an intelligent assisted diagnostic algorithm for OCT of the anterior segment based on GAN and SAM model. 
 
 I am looking for a research internship and research assistant position.
 
