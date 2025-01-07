@@ -1,6 +1,6 @@
 ---
 title: "AS-OCT: OCT Intelligent Assisted Diagnosis Interface for the Anterior Segment"
-excerpt: "A deep learning based medical image processing method <br/><img src='/images/OCT-UI界面.png'>"
+excerpt: "A deep learning based medical image processing method <br/><img src='/images/OCT-UI.png'>"
 collection: portfolio
 ---
 
