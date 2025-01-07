@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "AS-OCT: OCT Intelligent Assisted Diagnosis Interface for the Anterior Segment"
+excerpt: "A deep learning based medical image processing method <br/><img src='/images/OCT-UI界面.png'>"
 collection: portfolio
 ---
 
