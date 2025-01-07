@@ -10,9 +10,6 @@ main:
 
   - title: "Talks"
     url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
     
   - title: "Portfolio"
     url: /portfolio/
@@ -21,7 +18,4 @@ main:
     url: /year-archive/
     
   - title: "CV"
-    url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+    url: /Curriculum_Vitae.pdf/
