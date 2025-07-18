@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: redirect
 title: "CV"
 permalink: /cv/
 redirect_from:
