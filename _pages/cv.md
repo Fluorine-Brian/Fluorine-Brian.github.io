@@ -4,10 +4,10 @@ title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
-  - [/resume](http://academicpages.github.io/assets/Curriculum_Vitae.pdf)
+  - [/resume](https://fluorine-brian.github.io/assets/Curriculum_Vitae.pdf)
 ---
 
-{[[% include base_path %](http://academicpages.github.io/assets/Curriculum_Vitae.pdf)]}
+{[% include base_path %]}
 
 Education
 ======
