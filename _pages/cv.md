@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
-{[% include base_path %](https://fluorine-brian.github.io/)}
+{[[% include base_path %](http://academicpages.github.io/assets/Curriculum_Vitae.pdf)]}
 
 Education
 ======
