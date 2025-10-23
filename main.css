@@ -1018,6 +1018,15 @@ hr.soft {
     background-color: #000
 }
 
+.orcid span {
+    background-color: #A6CE39;
+}
+
+.email span { /* 悬停背景色 */
+    background-color: #FF0000;
+}
+
+
 .icon-button i {
     background: none;
     color: white;
@@ -1050,6 +1059,13 @@ hr.soft {
     color: #0077B5
 }
 
+.icon-button .icon-orcid {
+    color: #A6CE39; /* ORCID 绿色 */
+}
+
+.icon-button .icon-email {
+    color: #FF0000; /* 红色 */
+}
 
 .icon-button:hover .icon-twitter,
 .icon-button:hover .icon-facebook,
@@ -2062,7 +2078,7 @@ div.paginate-container li:nth-last-child(2) a:after {
 .news-scroll-container {
     max-height: 300px; /* 设置你希望的最大高度，可以根据需要调整 */
     overflow-y: auto;  /* 当内容超出最大高度时，显示垂直滚动条 */
-    padding-right: 22px; /* 为滚动条留出一些空间，防止内容被遮挡 */
+    padding-right: 30px; /* 为滚动条留出一些空间，防止内容被遮挡 */
     border: 1px solid #e8e8e8; /* 添加边框，使其看起来像图片中的卡片 */
     border-radius: 8px; /* 添加圆角 */
     background-color: #fff; /* 背景色 */
