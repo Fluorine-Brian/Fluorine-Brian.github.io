@@ -2098,7 +2098,7 @@ div.paginate-container li:nth-last-child(2) a:after {
 /* 调整 .indented 类的 padding-left，使其在滚动容器内对齐 */
 .news-scroll-container ul li.indented {
     position: relative; /* 确保相对定位，以便伪元素绝对定位 */
-    padding-left: 160px; /* 调整这个值，确保日期和内容对齐 */
+    padding-left: 50px; /* 调整这个值，确保日期和内容对齐 */
 }
 
 .news-scroll-container ul li.indented::before {
