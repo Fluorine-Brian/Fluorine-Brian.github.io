@@ -2062,7 +2062,7 @@ div.paginate-container li:nth-last-child(2) a:after {
 .news-scroll-container {
     max-height: 300px; /* 设置你希望的最大高度，可以根据需要调整 */
     overflow-y: auto;  /* 当内容超出最大高度时，显示垂直滚动条 */
-    padding-right: 18px; /* 为滚动条留出一些空间，防止内容被遮挡 */
+    padding-right: 22px; /* 为滚动条留出一些空间，防止内容被遮挡 */
     border: 1px solid #e8e8e8; /* 添加边框，使其看起来像图片中的卡片 */
     border-radius: 8px; /* 添加圆角 */
     background-color: #fff; /* 背景色 */
@@ -2139,8 +2139,8 @@ div.paginate-container li:nth-last-child(2) a:after {
 
 .institution-logo {
     flex-shrink: 0; /* 不缩小 */
-    width: 80px; /* Logo 宽度 */
-    height: 80px; /* Logo 高度 */
+    width: 120px; /* Logo 宽度 */
+    height: 120px; /* Logo 高度 */
     display: flex;
     justify-content: center;
     align-items: center;
