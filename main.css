@@ -149,8 +149,8 @@ pre>code {
 }
 
 .wrapper {
-    max-width: -webkit-calc(1024px - (25px * 2));
-    max-width: calc(1024px - (25px * 2));
+    max-width: -webkit-calc(1024px - (15px * 2));
+    max-width: calc(1024px - (15px * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: 30px;
