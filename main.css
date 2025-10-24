@@ -2078,7 +2078,7 @@ div.paginate-container li:nth-last-child(2) a:after {
 .news-scroll-container {
     max-height: 300px; /* 设置你希望的最大高度，可以根据需要调整 */
     overflow-y: auto;  /* 当内容超出最大高度时，显示垂直滚动条 */
-    padding-right: 15px; /* 为滚动条留出一些空间，防止内容被遮挡 */
+    padding-right: 5px; /* 为滚动条留出一些空间，防止内容被遮挡 */
     border: 1px solid #e8e8e8; /* 添加边框，使其看起来像图片中的卡片 */
     border-radius: 8px; /* 添加圆角 */
     background-color: #fff; /* 背景色 */
@@ -2098,7 +2098,7 @@ div.paginate-container li:nth-last-child(2) a:after {
 /* 调整 .indented 类的 padding-left，使其在滚动容器内对齐 */
 .news-scroll-container ul li.indented {
     position: relative; /* 确保相对定位，以便伪元素绝对定位 */
-    padding-left: 100px; /* 调整这个值，确保日期和内容对齐 */
+    padding-left: 75px; /* 调整这个值，确保日期和内容对齐 */
 }
 
 .news-scroll-container ul li.indented::before {
