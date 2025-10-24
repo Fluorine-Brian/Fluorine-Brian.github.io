@@ -2078,7 +2078,7 @@ div.paginate-container li:nth-last-child(2) a:after {
 .news-scroll-container {
     max-height: 300px; /* 设置你希望的最大高度，可以根据需要调整 */
     overflow-y: auto;  /* 当内容超出最大高度时，显示垂直滚动条 */
-    padding-right: 50px; /* 为滚动条留出一些空间，防止内容被遮挡 */
+    padding-right: 15px; /* 为滚动条留出一些空间，防止内容被遮挡 */
     border: 1px solid #e8e8e8; /* 添加边框，使其看起来像图片中的卡片 */
     border-radius: 8px; /* 添加圆角 */
     background-color: #fff; /* 背景色 */
@@ -2111,6 +2111,7 @@ div.paginate-container li:nth-last-child(2) a:after {
     white-space: nowrap; /* 防止日期换行 */
     color: #555; /* 可以给日期文本设置一个不同的颜色 */
     font-weight: 500; /* 可以让日期稍微粗一点 */
+    margin-right: 10px;
 }
 
 /* Education Cards 样式 */
