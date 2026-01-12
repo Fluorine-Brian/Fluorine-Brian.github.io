@@ -2201,72 +2201,68 @@ div.paginate-container li:nth-last-child(2) a:after {
 }
 
 
-/* Showcase Grid Layout */
-.showcase-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 三列布局 */
-    gap: 20px;
+/* 强制清除之前可能干扰的样式 */
+#showcase .showcase-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important; /* 强制三列 */
+    grid-auto-flow: dense;
+    gap: 15px;
     margin-top: 20px;
 }
 
 .showcase-card {
-    background: #fff;
-    border: 1px solid #e8e8e8;
-    border-radius: 12px;
+    background: #ffffff !important;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 12px !important;
     padding: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+/* 错落布局的核心：跨行与跨列 */
 .welcome-card {
-    grid-column: span 2; /* 欢迎卡片占两列宽 */
+    grid-column: span 2 !important; /* 占据左侧两列 */
+    min-height: 180px;
 }
 
 .star-history-card {
-    grid-row: span 2; /* 星标历史卡片占两行高 */
-    text-align: center;
-}
-
-.star-history-card img {
-    max-width: 100%;
-    margin: 10px 0;
+    grid-column: 3 !important;      /* 位于第三列 */
+    grid-row: span 2 !important;    /* 纵向跨越两行 */
 }
 
 .math-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
+    background: #f8f9fa !important;
+    text-align: center;
 }
 
-/* Precious Moments Gallery (瀑布流简易版) */
+/* 瀑布流图库优化 */
 .moments-gallery {
-    column-count: 4; /* 分为四列 */
+    line-height: 0;
+    column-count: 4; /* PC端4列 */
     column-gap: 10px;
-    margin-top: 15px;
 }
 
 .moments-gallery img {
-    width: 100%;
-    border-radius: 8px;
+    width: 100% !important;
+    height: auto !important;
     margin-bottom: 10px;
-    display: block;
-    transition: transform 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
-.moments-gallery img:hover {
-    transform: scale(1.03);
-}
-
-/* 响应式调整：在手机端变为一列显示 */
+/* 响应式适配 */
 @media screen and (max-width: 800px) {
-    .showcase-grid {
-        grid-template-columns: 1fr;
+    #showcase .showcase-grid {
+        grid-template-columns: 1fr !important; /* 移动端回归一列 */
     }
     .welcome-card, .star-history-card {
-        grid-column: span 1;
-        grid-row: span 1;
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
     }
     .moments-gallery {
-        column-count: 2;
+        column-count: 2; /* 移动端2列 */
     }
 }
