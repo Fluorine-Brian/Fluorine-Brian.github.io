@@ -2266,3 +2266,9 @@ div.paginate-container li:nth-last-child(2) a:after {
         column-count: 2; /* 移动端2列 */
     }
 }
+
+/* 显式定义加粗标签的字重为 700 (Bold) */
+b, strong {
+    font-weight: 700 !important;
+    color: #000; /* 可选：让加粗字体颜色稍微深一点，增强对比度 */
+}
