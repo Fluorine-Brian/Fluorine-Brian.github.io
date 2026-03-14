@@ -2209,66 +2209,114 @@ div.paginate-container li:nth-last-child(2) a:after {
     gap: 15px;
     margin-top: 20px;
 }
-
-.showcase-card {
-    background: #ffffff !important;
-    border: 1px solid #e8e8e8 !important;
-    border-radius: 12px !important;
-    padding: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05) !important;
+/* =========================================
+   分点图文展示 (Moments Category)
+   ========================================= */
+.moments-category-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 20px; /* 每个分类卡片之间的间距 */
 }
 
-/* 错落布局的核心：跨行与跨列 */
-.welcome-card {
-    grid-column: span 2 !important; /* 占据左侧两列 */
-    min-height: 180px;
+.moment-category-card {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03); /* 轻微阴影凸显卡片感 */
 }
 
-.star-history-card {
-    grid-column: 3 !important;      /* 位于第三列 */
-    grid-row: span 2 !important;    /* 纵向跨越两行 */
+.moment-text h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 8px;
 }
 
-.math-card {
-    background: #f8f9fa !important;
-    text-align: center;
+.moment-text p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
 }
 
-/* 瀑布流图库优化 */
-.moments-gallery {
-    line-height: 0;
-    column-count: 4; /* PC端4列 */
-    column-gap: 10px;
+.moment-image-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto; /* 若图片过多，允许在卡片内横向滑动 */
+    padding-bottom: 5px; /* 防止滚动条挡住图片 */
 }
 
-.moments-gallery img {
-    width: 100% !important;
-    height: auto !important;
-    margin-bottom: 10px;
+.moment-image-row img {
+    height: 200px; /* 固定高度，宽度自适应 */
+    width: auto;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
+    border: 1px solid #eee;
     transition: transform 0.3s ease;
 }
 
-/* 响应式适配 */
-@media screen and (max-width: 800px) {
-    #showcase .showcase-grid {
-        grid-template-columns: 1fr !important; /* 移动端回归一列 */
-    }
-    .welcome-card, .star-history-card {
-        grid-column: span 1 !important;
-        grid-row: span 1 !important;
-    }
-    .moments-gallery {
-        column-count: 2; /* 移动端2列 */
-    }
+.moment-image-row img:hover {
+    transform: scale(1.02); /* 鼠标悬停微微放大 */
 }
 
-/* 显式定义加粗标签的字重为 700 (Bold) */
-b, strong {
-    font-weight: 700 !important;
-    color: #000; /* 可选：让加粗字体颜色稍微深一点，增强对比度 */
+
+/* =========================================
+   横向无限滚动展示 (Scrolling Container)
+   ========================================= */
+.scrolling-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e8e8e8;
+}
+
+.scrolling-track {
+    display: inline-flex;
+    gap: 15px;
+    /* 35s 控制滚动速度，改小会变快，改大会变慢 */
+    animation: scroll-left 35s linear infinite; 
+}
+
+/* 鼠标悬停时暂停滚动 */
+.scrolling-container:hover .scrolling-track {
+    animation-play-state: paused;
+}
+
+.scrolling-track img {
+    height: 160px;
+    width: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.scrolling-track img:hover {
+    transform: scale(1.05); /* 悬停放大 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* 移动 50% 实现无缝衔接 */
+}
+
+/* =========================================
+   移动端适配
+   ========================================= */
+@media screen and (max-width: 768px) {
+    .moment-image-row img {
+        height: 140px; /* 手机端减小分点图片的高度 */
+    }
+    .scrolling-track img {
+        height: 120px; /* 手机端减小滚动图片的高度 */
+    }
+    .moment-category-card, .scrolling-container {
+        padding: 15px;
+    }
 }
