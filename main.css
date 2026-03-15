@@ -2224,6 +2224,9 @@ div.paginate-container li:nth-last-child(2) a:after {
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.03); /* 轻微阴影凸显卡片感 */
+    max-width: calc(100% - 15px); 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .moment-text h3 {
@@ -2273,6 +2276,9 @@ div.paginate-container li:nth-last-child(2) a:after {
     padding: 20px;
     border-radius: 12px;
     border: 1px solid #e8e8e8;
+    max-width: calc(100% - 15px); 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .scrolling-track {
@@ -2328,6 +2334,9 @@ div.paginate-container li:nth-last-child(2) a:after {
     display: flex;
     flex-wrap: wrap; /* 如果朋友很多，屏幕放不下会自动换行 */
     gap: 12px;       /* 每个徽章之间的间距 */
+    max-width: calc(100% - 15px); 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .friend-badge {
