@@ -2426,30 +2426,30 @@ div.paginate-container li:nth-last-child(2) a:after {
 }
 
 /* =========================================
-   暗黑模式 (Dark Mode) - 手动开关控制版
+   暗黑模式 (Dark Mode) - 手动开关控制版 (完美修复版)
    ========================================= */
-/* 核心：只有当 body 被加上 dark-mode 这个 class 时才变黑 */
 body.dark-mode {
     background-color: #121212 !important; 
     color: #e0e0e0 !important;
 }
 
-/* 标题和文字 */
+/* 1. 主标题和高亮文字 (新增 #my-name 修复自我介绍名字颜色) */
 body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6, 
 body.dark-mode .site-title, body.dark-mode .md-heading, body.dark-mode .timeline-title, body.dark-mode .friend-name, 
-body.dark-mode .moment-text h3, body.dark-mode .degree-title {
+body.dark-mode .moment-text h3, body.dark-mode .degree-title, body.dark-mode #my-name {
     color: #ffffff !important;
 }
 
-/* 卡片模块背景 */
+/* 2. 卡片模块背景 (新增 .news-scroll-container 修复新闻滚动框的背景和边框) */
 body.dark-mode .wrapper-light, body.dark-mode .friend-profile-card, body.dark-mode .education-card, 
-body.dark-mode .moment-category-card, body.dark-mode .scrolling-container, body.dark-mode pre, body.dark-mode code {
+body.dark-mode .moment-category-card, body.dark-mode .scrolling-container, body.dark-mode .news-scroll-container, 
+body.dark-mode pre, body.dark-mode code {
     background-color: #1e1e1e !important; 
     border-color: #333333 !important;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6) !important;
 }
 
-/* 导航栏与底部 */
+/* 3. 导航栏与底部 */
 body.dark-mode .site-header {
     border-top: 3px solid #333 !important;
     border-bottom: 1px solid #333 !important;
@@ -2458,13 +2458,14 @@ body.dark-mode .site-footer, body.dark-mode .md-heading {
     border-color: #333333 !important;
 }
 
-/* 辅助文字 */
+/* 4. 辅助文字 (新增 #my-title, #my-email 修复自我介绍的机构和邮箱颜色，新增新闻前面日期的颜色修复) */
 body.dark-mode .text-grey, body.dark-mode .timeline-desc, body.dark-mode .friend-org, 
-body.dark-mode .moment-text p, body.dark-mode .institution-name, body.dark-mode .education-details ul {
+body.dark-mode .moment-text p, body.dark-mode .institution-name, body.dark-mode .education-details ul,
+body.dark-mode #my-title, body.dark-mode #my-email, body.dark-mode .news-scroll-container ul li.indented::before {
     color: #aaaaaa !important;
 }
 
-/* 超链接 */
+/* 5. 超链接 */
 body.dark-mode a, body.dark-mode .pub-right>.authors>.author, body.dark-mode .pub-right>.publish>.place {
     color: #4da3ff !important; 
 }
@@ -2472,7 +2473,7 @@ body.dark-mode a:hover, body.dark-mode .friend-card-info .friend-link:hover {
     color: #90e0ef !important;
 }
 
-/* 图标与边框 */
+/* 6. 图标与边框 (核心修复：强制 Github 和 CV 黑色图标在暗黑模式下变成白色！) */
 body.dark-mode .site-nav .page-link {
     color: #e0e0e0 !important;
 }
@@ -2482,8 +2483,11 @@ body.dark-mode .icon-button {
 body.dark-mode .friend-card-avatar, body.dark-mode .circle-img, body.dark-mode .institution-logo {
     border-color: #444444 !important;
 }
+body.dark-mode .icon-button .icon-github {
+    color: #ffffff !important; /* GitHub 和 CV 的图标变白 */
+}
 
-/* 时间轴 */
+/* 7. 时间轴 */
 body.dark-mode .timeline-item:before, body.dark-mode .timeline>.timeline-body>.timeline-item:last-child:after {
     background: #555555 !important;
 }
