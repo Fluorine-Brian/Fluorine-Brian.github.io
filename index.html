@@ -110,6 +110,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="page-link" href="#codebase"><b>GitHub</b></a>
     <a class="page-link" href="#awards"><b>Honors & Awards</b></a>
     <a class="page-link" href="#academicservices"><b>Academic Services </b></a>
+    <a class="page-link" href="javascript:void(0);" id="theme-toggle" title="Toggle Dark/Light Mode" style="font-size: 18px;">
+        <i class="fa fa-moon-o" id="theme-icon"></i>
+    </a>
     <!--<a class="page-link" href="#otherprojects">Projects</a>-->
     <!-- Button for Posts -->
   </div>
@@ -879,6 +882,45 @@ jQuery(document).ready(function() {
         return false;
     })
 });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const themeToggleBtn = document.getElementById("theme-toggle");
+      const themeIcon = document.getElementById("theme-icon");
+      
+      // 1. 检查浏览器本地存储，看看用户之前选的是什么模式
+      const currentTheme = localStorage.getItem("theme");
+      
+      // 2. 如果之前存的是 dark，就给网页加上暗黑模式，并把图标换成太阳
+      if (currentTheme === "dark") {
+          document.body.classList.add("dark-mode");
+          themeIcon.classList.remove("fa-moon-o");
+          themeIcon.classList.add("fa-sun-o");
+      }
+
+      // 3. 当用户点击开关时的逻辑
+      themeToggleBtn.addEventListener("click", function() {
+          // 切换网页的暗黑状态
+          document.body.classList.toggle("dark-mode");
+          
+          let theme = "light"; // 默认是白天
+          
+          // 如果现在是黑夜模式
+          if (document.body.classList.contains("dark-mode")) {
+              theme = "dark";
+              // 图标变成太阳（暗示点击可以回到白天）
+              themeIcon.classList.remove("fa-moon-o");
+              themeIcon.classList.add("fa-sun-o");
+          } else {
+              // 图标变回月亮
+              themeIcon.classList.remove("fa-sun-o");
+              themeIcon.classList.add("fa-moon-o");
+          }
+          
+          // 4. 将用户的选择保存到本地存储，下次打开依然有效
+          localStorage.setItem("theme", theme);
+      });
+  });
 </script>
   </body>
 

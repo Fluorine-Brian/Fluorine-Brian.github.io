@@ -2424,3 +2424,76 @@ div.paginate-container li:nth-last-child(2) a:after {
         grid-template-columns: 1fr; 
     }
 }
+
+/* =========================================
+   暗黑模式 (Dark Mode) - 手动开关控制版
+   ========================================= */
+/* 核心：只有当 body 被加上 dark-mode 这个 class 时才变黑 */
+body.dark-mode {
+    background-color: #121212 !important; 
+    color: #e0e0e0 !important;
+}
+
+/* 标题和文字 */
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6, 
+body.dark-mode .site-title, body.dark-mode .md-heading, body.dark-mode .timeline-title, body.dark-mode .friend-name, 
+body.dark-mode .moment-text h3, body.dark-mode .degree-title {
+    color: #ffffff !important;
+}
+
+/* 卡片模块背景 */
+body.dark-mode .wrapper-light, body.dark-mode .friend-profile-card, body.dark-mode .education-card, 
+body.dark-mode .moment-category-card, body.dark-mode .scrolling-container, body.dark-mode pre, body.dark-mode code {
+    background-color: #1e1e1e !important; 
+    border-color: #333333 !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* 导航栏与底部 */
+body.dark-mode .site-header {
+    border-top: 3px solid #333 !important;
+    border-bottom: 1px solid #333 !important;
+}
+body.dark-mode .site-footer, body.dark-mode .md-heading {
+    border-color: #333333 !important;
+}
+
+/* 辅助文字 */
+body.dark-mode .text-grey, body.dark-mode .timeline-desc, body.dark-mode .friend-org, 
+body.dark-mode .moment-text p, body.dark-mode .institution-name, body.dark-mode .education-details ul {
+    color: #aaaaaa !important;
+}
+
+/* 超链接 */
+body.dark-mode a, body.dark-mode .pub-right>.authors>.author, body.dark-mode .pub-right>.publish>.place {
+    color: #4da3ff !important; 
+}
+body.dark-mode a:hover, body.dark-mode .friend-card-info .friend-link:hover {
+    color: #90e0ef !important;
+}
+
+/* 图标与边框 */
+body.dark-mode .site-nav .page-link {
+    color: #e0e0e0 !important;
+}
+body.dark-mode .icon-button {
+    background-color: #2a2a2a !important; 
+}
+body.dark-mode .friend-card-avatar, body.dark-mode .circle-img, body.dark-mode .institution-logo {
+    border-color: #444444 !important;
+}
+
+/* 时间轴 */
+body.dark-mode .timeline-item:before, body.dark-mode .timeline>.timeline-body>.timeline-item:last-child:after {
+    background: #555555 !important;
+}
+body.dark-mode .timeline-item:nth-child(odd) { border-left-color: #555555 !important; }
+body.dark-mode .timeline-item:nth-child(even) { border-right-color: #555555 !important; }
+
+/* --- 移动端下拉菜单在暗黑模式下的修复 --- */
+@media screen and (max-width: 600px) {
+    body.dark-mode .site-nav {
+        background-color: #1e1e1e !important;
+        border-color: #333 !important;
+    }
+}
