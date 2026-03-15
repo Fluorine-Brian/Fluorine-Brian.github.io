@@ -2320,3 +2320,51 @@ div.paginate-container li:nth-last-child(2) a:after {
         padding: 15px;
     }
 }
+
+/* =========================================
+   友情链接胶囊徽章 (Friends Badges)
+   ========================================= */
+.friends-gallery {
+    display: flex;
+    flex-wrap: wrap; /* 如果朋友很多，屏幕放不下会自动换行 */
+    gap: 12px;       /* 每个徽章之间的间距 */
+}
+
+.friend-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px 6px 6px; /* 左边距小一点让头像贴边，右边距大一点包住文字 */
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 50px; /* 胶囊形状的圆角 */
+    text-decoration: none !important; /* 去掉超链接默认的下划线 */
+    transition: all 0.3s ease; /* 平滑动画过渡 */
+}
+
+/* 鼠标悬停在徽章上时的效果 */
+.friend-badge:hover {
+    transform: translateY(-2px); /* 微微上浮 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* 加点阴影 */
+    border-color: #d0d0d0;
+}
+
+.friend-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /* 核心：将图片强行变成正圆形 */
+    object-fit: cover;  /* 核心：保证头像比例正常，不拉伸变形 */
+    margin-right: 10px; /* 头像和名字之间的距离 */
+    border: 1px solid #eee;
+}
+
+.friend-name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* 鼠标悬停时，名字变蓝，暗示可以点击 */
+.friend-badge:hover .friend-name {
+    color: #0077B5; 
+}
