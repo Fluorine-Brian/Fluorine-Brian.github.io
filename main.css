@@ -2501,3 +2501,29 @@ body.dark-mode .timeline-item:nth-child(even) { border-right-color: #555555 !imp
         border-color: #333 !important;
     }
 }
+
+/* About section: justified text and automatic English hyphenation */
+.about-body .about-text {
+    text-align: justify;
+    text-justify: inter-word;
+    text-align-last: left;
+
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+/* Keep each About paragraph visually separated */
+.about-body .about-text {
+    margin-bottom: 20px;
+}
+
+/* Allow long linked text to wrap properly */
+.about-body .about-text a {
+    overflow-wrap: break-word;
+    word-break: normal;
+}
