@@ -1,1011 +1,940 @@
 <!DOCTYPE html>
 <html lang="en">
-
-  <head>
-
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFR2GFKT75"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-RFR2GFKT75');
-  </script> -->
-  <!-- Google Tag Manager -->
-  <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  })(window,document,'script','dataLayer','GTM-NC38VTD');</script> -->
-  <!-- End Google Tag Manager -->
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- <meta http-equiv="refresh" content="0; URL=https://cs.stanford.edu/~leoyuan/"> -->
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  
-	<!-- <meta name="google-site-verification" content="u_--0s_Uw50r4zCgRrzltkmFhNCduYOJwPGlKVTuNJU" /> -->
-
-  <title>Xinyu Fu</title>
-  <meta name="description" lang="en" content="This is an academic website for Xinyu Fu">
-  <meta name="keywords" lang="en" content="Xinyu Fu" />
-  
-
-  <link rel="shortcut icon" href="images/logo_website.jpg">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/academicons.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-
-  <script src="js/jquery-2.1.3.min.js"> </script>
-
-  <!--[if lt IE 9]>
-<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
-</script>
-<![endif]-->
-
-  <script type="text/javascript">
-    function ShowHide(divId, linkDivId) {
-        if(document.getElementById(divId).style.display == 'none') {
-            document.getElementById(divId).style.display='block';
-            document.getElementById(linkDivId).style.display='none'; // Hide the "read more" link
-        }
-        else {
-            document.getElementById(divId).style.display = 'none';
-        }
-    }
-  </script>
-
-  <style>
-    /* 为所有列表项设置样式 */
-    li.indented {
-        position: relative;
-        padding-left: 90px; /* 这是对齐效果的关键，可以根据实际内容调整这个值 */
-    }
-
-    li.indented::before {
-        content: attr(data-date);
-        position: absolute;
-        left: 0;
-        top: 0;
-        white-space: nowrap;
-    }
-  </style>
-  
-
-  
-</head>
-
-
-<body>
-
-    <!-- Google Tag Manager (noscript) -->
-<!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC38VTD"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
-<!-- End Google Tag Manager (noscript) -->
-
-    <header class="site-header">
-
-  <div class="wrapper">
-<nav class="site-nav">
-  <a href="#" class="menu-icon">
-    <svg viewBox="0 0 18 15">
-      <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-      <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-      <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-    </svg>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Xinyu Fu
+  </title>
+  <meta content="This is an academic website for Xinyu Fu" lang="en" name="description"/>
+  <meta content="Xinyu Fu" lang="en" name="keywords"/>
+  <link href="images/logo_website.jpg" rel="shortcut icon"/>
+  <link href="main.css" rel="stylesheet"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#main-content">
+   Skip to content
   </a>
-
-  <div class="trigger">
-    <a class="page-link" href="#bio"><b>Biography</b></a>
-    <a class="page-link" href="#timeline"><b>Experiences</b></a>
-    <a class="page-link" href="#publications"><b>Publications & Patents</b></a>
-    <a class="page-link" href="#codebase"><b>GitHub</b></a>
-    <a class="page-link" href="#awards"><b>Honors & Awards</b></a>
-    <a class="page-link" href="#academicservices"><b>Academic Services </b></a>
-    <a class="page-link" href="javascript:void(0);" id="theme-toggle" title="Toggle Dark/Light Mode" style="font-size: 18px;">
-        <i class="fa fa-moon-o" id="theme-icon"></i>
+  <header class="site-header">
+   <nav aria-label="Main navigation" class="site-nav wrapper">
+    <a class="site-brand" href="#profile-cover">
+     Xinyu Fu
     </a>
-    <!--<a class="page-link" href="#otherprojects">Projects</a>-->
-    <!-- Button for Posts -->
-  </div>
-</nav>
-  </div>
-</header>
-
-  <div id="profile-cover" class="cover shallow-bg img-responsive"> 
-    <div id="profile-namecard" class="profile-wrapper wrapper-light">
-      <div id="my-pic" class="profile-col profile-col-1">
-        <img id="profile-avatar" src="images/myself.jpg" alt="Me" class="circle-img border-dark"-/>
-      </div>
-      <div id="my-contact" class="profile-col profile-col-2">
-        <div id="my-name" class="text-grey-dark">
-          Xinyu FU<br>
-        </div>
-        <div id="my-title" class="text-grey">
-        South China University of Technology
-        </div>
-        <div id="my-email" class="text-grey-light">
-          xinyufu431 [at] gmail.com <br> 202364810311 [at] mail.scut.edu.cn
-        </div>
-
-	</div>
-        <div class="social-media">
-          <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=g7AuSWUAAAAJ" target="_blank" class="icon-button linkedin">
-          <i class="ai ai-google-scholar-square icon-linkedin"></i>
-            <span></span>
-          </a>
-
-          <a href="https://github.com/Fluorine-Brian" target="_blank" class="icon-button github">
-            <i class="fa fa-github icon-github"></i>
-            <span></span>
-          </a>
-
-          <a href="https://www.linkedin.com/in/jun-cen-45b995219/" target="_blank" class="icon-button linkedin">
-            <i class="fa fa-linkedin icon-linkedin"></i>
-            <span></span>
-          </a>
-         
-          <a href="work/CV.pdf" target="_blank" class="icon-button github">
-            <i class="ai ai-cv icon-github"></i>
-            <span></span>
-          </a>
-
-          <a href="https://orcid.org/your_orcid_id" target="_blank" class="icon-button orcid">
-          <i class="ai ai-orcid icon-orcid"></i>
-          <span></span>
-          </a>
-
-          <a href="mailto:jcenaa@connect.ust.hk" target="_blank" class="icon-button linkedin">
-            <i class="fa fa-envelope icon-email"></i>
-            <span></span>
-          </a>
-        </div>
-      </div>
-
-      <!-- <div id="my-desc" class="profile-col profile-col-2 hide">
-        <div id="my-desc-title">
-          Another me.
-        </div>
-        <div id="my-desc-content">
-          I enjoy running, traveling, hiking, movies, music and so much more<br>
-        </div>
-      </div> -->
-    </div>
-  </div>
-  <!-- <script type="text/javascript">
-    function deepFeature()
-    {
-      $('#profile-avatar').attr('src', 'images/self-portrait/deep-me.jpg');
-      $('#profile-avatar').removeClass('border-dark');
-      $('#profile-avatar').addClass('border-bright');
-
-      $('#profile-cover').removeClass('shallow-bg');
-      $('#profile-cover').addClass('deep-bg');
-      
-      $('#profile-namecard').removeClass('wrapper-light');
-      $('#profile-namecard').addClass('wrapper-dark');
-      
-      $('#my-desc').removeClass('hide');
-      $('#my-contact').addClass('hide');    
-      // console.log('Move in now...');
-    }
-
-    function shallowFeature()
-    {
-      $('#profile-avatar').attr('src', 'images/self-portrait/me.jpg');
-      $('#profile-avatar').removeClass('border-bright');
-      $('#profile-avatar').addClass('border-dark');
-
-      $('#profile-cover').removeClass('deep-bg');
-      $('#profile-cover').addClass('shallow-bg');
-      
-      $('#profile-namecard').removeClass('wrapper-dark');
-      $('#profile-namecard').addClass('wrapper-light');
-      
-      $('#my-contact').removeClass('hide');
-      $('#my-desc').addClass('hide');
-      // console.log('Move out now...');
-    }
-
-    $(function() { 
-      $('#my-pic').hover(deepFeature, shallowFeature);
-    })
-
-  </script> -->
-
-<div class="page-content">
-<div class="wrapper">
-<div id="bio" class="bio">
-
-  <h1 class="md-heading text-left">
-    <i class="fa fa-id-card" aria-hidden="true"></i>
-    About
-  </h1>
-<div class="bio-body about-body" style="overflow:hidden;">
-  <p class="about-text" lang="en">
-    I am a third-year undergraduate student majoring in Biomedical Engineering at 
-    <a href="https://www.scut.edu.cn/en/" target="_blank">South China University of Technology</a>. Currently, I am working as an algorithm intern at 
-    <a href="https://omni-intel.cn/" target="_blank">Omni Intelligence</a>, 
-    where I focus on advancing algorithmic research in BCI Foundation Models 
-    under the supervision of Dr. Kexin Lou and Dr. Chen Wei. Previously, I was a visiting student at 
-    <a href="https://www.sustech.edu.cn/en/" target="_blank">Southern University of Science and Technology</a>, 
-    under the supervision of 
-    <a href="https://www.sustech.edu.cn/en/faculties/liuquanying.html" target="_blank">Prof. Quanying Liu</a>, 
-    where I focused on parameter-efficient personalized adaptation and test-time adaptation methods for EEG foundation models. 
-    I also worked under the supervision of 
-    <a href="http://hdmilab.cn/people/info?abbr=XYW" target="_blank">Prof. Yanwu Xu</a> and 
-    <a href="https://www2.scut.edu.cn/ft/2021/1102/c45109a449585/page.htm" target="_blank">Prof. Lin Shu</a>.
-  </p>
-
-  <p class="about-text" lang="en">
-    My primary research interests include <b>BCI Foundation Models</b>, 
-    <b>Human-AI Alignment</b>, <b>Medical AI</b>, and <b>Human-Agent Interaction</b>, 
-    especially in LLMs and agentic applications. Always eager to expand my research experience, 
-    <mark>I am seeking opportunities for research internships in 2026 and Ph.D. positions in 2027.</mark> 
-    If you are interested in chatting with me, feel free to drop me an 
-    <a href="mailto:xinyufu431@gmail.com" target="_blank">email</a>.
-  </p>
-
-  <div style="width: 100%; float:right">
-
-    <h3>
-        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-        <strong>Education</strong>
-    </h3>
-    <div class="education-cards-container">
-        <!-- 第一个教育经历卡片 -->
-        <div class="education-card">
-            <div class="education-details">
-                <div class="degree-title">Visiting Student</div>
-                <div class="institution-name">Southern University of Science and Technology, School of Biomedical Engineering</div>
-                <ul>
-                    <li>Advisor: Quanying Liu</li>
-                    <li>Neural Computing & Control Lab</li>
-                    <li>2025.09 - 2026.07</li>
-                </ul>
-            </div>
-            <div class="institution-logo">
-                <img src="images/SUSTech.png" alt="NUS Logo"> 
-            </div>
-            <div class="institution-logo">
-                <img src="images/NCC.png" alt="NCC Logo">
-            </div>
-        </div>
-
-        <!-- 第二个教育经历卡片 -->
-        <div class="education-card">
-            <div class="education-details">
-                <div class="degree-title">Bachelor of Engineering (B.Eng)</div>
-                <div class="institution-name">South China University of Technology</div>
-                <ul>
-                    <li>Major: Biomedical Engineering, GPA: 3.89/4.00, Top 10%</li>
-                    <li>2023.09 - 2027.08</li>
-                    <li>First Prize Scholarship of School, Merit Student of School</li>
-                </ul>
-            </div>
-            <div class="institution-logo">
-                <img src="images/SCUT.png" alt="SCUT Logo">
-            </div>
-        </div>
-
-      
-
-    </div> <!-- 结束 education-cards-container -->
-</div>
-
-  
-  </div>
-</div>
-
-<div id="news" class="bio">
-  <h1 class="md-heading text-left">
-    <i class="fa fa-fire" aria-hidden="true"></i>
-    News
-  </h1>  
-  <div class="news-scroll-container"> <!-- 新增的 div 容器 -->
-  <ul>
-    <li class="indented" data-date="[2026.09]"> 🎉🎉One paper is accepted to NeurIPS 2026! See you in Sedney!</li>
-    <li class="indented" data-date="[2026.09]"> 🎉🎉One paper is accepted to Scientific Data (JCR Q1)</li>
-    <li class="indented" data-date="[2026.06]"> 🎉🎉Joined Shenzhen Omni-Intelligence Technology Co., Ltd. as an algorithm engineer intern!</li>
-    <li class="indented" data-date="[2026.05]"> 🎉🎉Awarded Meritorious Winner Prize for MCM/ICM Competition.</li>
-    <li class="indented" data-date="[2026.05]"> 🎉🎉One Paper is accepted to IEEE ICME 2026 as spotlight!</li>
-    <li class="indented" data-date="[2026.03]"> 🎉🎉Awarded Silver Prize in 15th Challenge Cup School Innovation Competition!</li>
-    <li class="indented" data-date="[2025.11]"> 🎉🎉Awarded first prize in 2nd Brain-Inspired Intelligence Innovation Competition (South China Region)!</li>
-    <li class="indented" data-date="[2025.10]"> Give a talk on "Academic Development for New Students" at SCUT, Guangzhou. See [<a href="https://mp.weixin.qq.com/s/sR-ihwUNjfe1d2sLBtF0eg">here</a>]</li>
-    <li class="indented" data-date="[2025.10]"> 🎉🎉Honored to be awarded the First Class (1%) Scholarship, the highest scholarship awarded by SCUT.</li>	
-    <li class="indented" data-date="[2025.10]"> 🎉🎉Awarded third prize in Contemporary Undergraduate Mathematical Contest in Modeling, Guangdong Province.</li>
-    	<li class="indented" data-date="[2025.09]"> Participated in MICCAI 2025 and give a talk about my OMIA paper, Dajeon, South Korea. Check it out [<a href="work/MICCAI2025-Certificate-6021.pdf">here</a>]</li>
-    	    	<li class="indented" data-date="[2025.08]"> Joined Neural Computing & Control Lab as a visiting student.</li>
-        <li class="indented" data-date="[2025.07]"> Awarded the first prize of Shenzhen Cup Mathematical Modeling Competition, making it to the final, Guangdong Province. See you in Shenzhen BIT-MSU University!🎉🎉</li>
-            <li class="indented" data-date="[2025.07]"> Awarded third prize in 10TH International Biomedical Engineering Innovation Design Competition. Check it out [<a href="work/参赛作品报告_最终版.pdf">here</a>]</li>
-   	<li class="indented" data-date="[2025.06]"> One paper accepted to 12th MICCAl Workshop on Ophthalmic Medical lmage Analysis. See you in Dajeon!🎉🎉</li>
-   	<li class="indented" data-date="[2025.05]"> 🎉🎉One patent is granted. See the details <a href="https://patents.google.com/patent/CN119107380A/en?oq=CN119107380">here</a>.</li>
-   	<li class="indented" data-date="[2024.10]"> 🎉🎉Awarded first prize in Contemporary Undergraduate Mathematical Contest in Modeling, Guangdong Province.</li>
-</div>
-
-<!-- <div class="wrapper"> -->
-  <div id="timeline" class="timeline-brief">
-    <h1 class="md-heading text-left">
-      <i class="fa fa-tasks" aria-hidden="true"></i>
+    <button aria-controls="site-menu" aria-expanded="false" class="menu-toggle" type="button">
+     Menu
+     <span aria-hidden="true">
+      ?
+     </span>
+    </button>
+    <div class="site-menu" id="site-menu">
+     <a href="#bio">
+      Biography
+     </a>
+     <a href="#news">
+      News
+     </a>
+     <a href="#timeline">
       Experiences
-    </h1>
-
-      <div class="timeline-item">
-        <div class="timeline-date">
-          <img class="social-icon" src="images/omni-intelligence.jpg"/>
-          Jun, 2026 - Oct, 2026
-        </div>
-        <div class="timeline-title">
-          Algorithm Intern @ <a href="https://omni-intel.cn/" target="_blank">Omni Intelligence</a>
-        </div>
-        <div class="timeline-desc">
-          <div class="timeline-host">
-            Supervisor: <a href="https://scholar.google.com/citations?user=F6yu2IgAAAAJ&hl=en" target="_blank">Dr. Kexin Lou</a> and <a href="https://hedges0-0.github.io/" target="_blank">>Dr. Chen Wei</a>
-          </div>
-        </div>
-      </div>
-      
-      <div class="timeline-item">
-        <div class="timeline-date">
-          <img class="social-icon" src="images/SUSTech_3.png"/>
-          Sep, 2025 - June, 2026
-        </div>
-        <div class="timeline-title">
-          Visiting Student @ <a href="https://www.sustech.edu.cn/en/" target="_blank">NCC Lab, SUSTech</a>
-        </div>
-        <div class="timeline-desc">
-          <div class="timeline-host">
-            Supervisor: <a href="https://www.sustech.edu.cn/en/faculties/liuquanying.html" target="_blank">Prof. Quanying Liu</a>
-          </div>
-        </div>
-      </div>
-  
-        <div class="timeline-item">
-          <div class="timeline-date">
-            <img class="social-icon" src="images/FutureTECH.png"/>
-            Nov, 2024 - July, 2025
-          </div>
-          <div class="timeline-title">
-            Research Student @ <a href="https://www2.scut.edu.cn/ft/2021/1102/c45109a449585/page.htm" target="_blank">MRII Lab, SCUT</a>
-          </div>
-          <div class="timeline-desc">
-            <div class="timeline-host">
-              Supervisor: <a href="https://www2.scut.edu.cn/ft/2021/1102/c45109a449585/page.htm" target="_blank">Dr. Lin Shu</a> 
-            </div>
-          </div>
-        </div>
-  
-          <div class="timeline-item">
-            <div class="timeline-date">
-              <img class="social-icon" src="images/HDMI.jpg"/>
-              Mar, 2024 - July, 2025
-            </div>
-            <div class="timeline-title">
-              Research Student @ <a href="http://hdmilab.cn/research" target="_blank">HDMI Lab, SCUT</a>
-            </div>
-            <div class="timeline-desc">
-              <div class="timeline-host">
-                Supervisor: <a href="https://scholar.google.com/citations?hl=en&user=0jP8f7sAAAAJ" target="_blank"> Dr. Yanwu Xu</a> and <a href="https://scholar.google.com/citations?hl=en&user=GmntaOwAAAAJ" target="_blank"> Dr. Huihui Fang</a>
-              </div>
-            </div>
-          </div>
-      
-          <div class="timeline-item">
-            <div class="timeline-date">
-              <img class="social-icon" src="images/生物医学科学与工程学院徽章.jpg"/>
-              Dec, 2023 - July, 2024
-            </div>
-            <div class="timeline-title">
-              Research Student @ <a href="https://www.x-mol.com/groups/scut-minilab?lang=en" target="_blank">MINI Lab, SCUT</a>
-            </div>
-            <div class="timeline-desc">
-              <div class="timeline-host">
-                Supervisor: <a href="https://scholar.google.com/citations?hl=en&user=fAVy6KIAAAAJ" target="_blank">Dr. Kai Wu</a>
-              </div>
-            </div>
-          </div>
-  
-    <br>
-  </div>
-  </div>
-
-
-<div id="publications" class="publications">
-  <h1 class="md-heading text-left">
-    <i class="fa fa-file" aria-hidden="true"></i>
-    Publications & Patents (<button class="custom-button" id="show-selected-btn"> Show Representative </button> / <button class="custom-button" id="show-all-btn"> Show All </button>)
-  </h1>
-
-  <h2 style="font-size: 24px; font-weight: 600; margin-top: 10px; margin-bottom: 20px; color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px;">
-    <i class="fa fa-book" aria-hidden="true"></i> Publications
-  </h2>
-
-  <div class="pub-list">
-    <div class="pub" data-selected="true">
-      <div class="pub-left">
-        <img class="intro-img frame" src="images/neuroTech.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">NeuroTeCh: Geometry-Aware Multi-View Physiological Pretraining for Heterogeneous EEG Foundation Models</div>
-        <div class="authors"><font style="font-size: 11pt;"></font></div>
-        <div class="publish">
-          <span class="place">Under Review</span>
-          <span class="place"></span>
-        </div>
-        <div class="tags"></div>
-      </div>
+     </a>
+     <a href="#publications">
+      Publications &amp; Patents
+     </a>
+     <a href="#awards">
+      Honors &amp; Awards
+     </a>
     </div>
-
-  <div class="pub-list">
-    <div class="pub" data-selected="true">
-      <div class="pub-left">
-        <img class="intro-img frame" src="images/ICML2026.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">Rest-Tuning: Data-Efficient Adaptation of EEG Foundation Models to Individuals via Resting-State Signals</div>
-        <div class="authors"><font style="font-size: 11pt;">
-          Yinuo Zhang<sup>*</sup>, <b>Xinyu Fu<sup>*</sup></b>, Qing Wang, Yinte Zhang, Junjie Yu, Kexin Lou, Quanying Liu
-        </font><br><small>* Equal contribution (co-first authors).</small></div>
-        <div class="publish">
-          <span class="place">NeurIPS 2026</span>
-          <span class="place"></span>
-        </div>
-        <div class="tags"></div>
-      </div>
+    <button aria-label="Switch to dark mode" aria-pressed="false" class="theme-toggle" id="theme-toggle" type="button">
+     <i aria-hidden="true" class="fa fa-moon-o" id="theme-icon">
+     </i>
+    </button>
+   </nav>
+  </header>
+  <div class="cover shallow-bg img-responsive" id="profile-cover">
+   <div class="profile-wrapper wrapper-light" id="profile-namecard">
+    <div class="profile-col profile-col-1" id="my-pic">
+     <img alt="Me" class="circle-img border-dark" decoding="async" fetchpriority="high" height="2448" id="profile-avatar" src="images/myself.jpg" width="2065"/>
     </div>
-
-  <!-- <div class="pub" data-selected="true">
-      <div class="pub-left">
-        <img class="intro-img frame" src="images/LAD.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">ToolScale-RTL: Tool-Augmented Iterative Refinement for Test-Time Scaling in Hardware Design</div>
-        <div class="authors"><font style="font-size: 11pt;"></font></div>
-        <div class="publish">
-          <span class="place">Under Review</span>
-          <span class="place"></span>
-        </div>
-        <div class="tags"></div>
-      </div>
-    </div>  -->
-
-    <div class="pub" data-selected="true">
-      <div class="pub-left">
-        <img class="intro-img frame" src="images/ICME2026.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">Behavior-Guided EEG Multimodal Learning for Enhanced Addiction Diagnosis</div>
-        <div class="authors"><font style="font-size: 11pt;">
-          Yinuo Zhang, Yinte Zhang, Song Wang, <b>Xinyu Fu</b>, Yichen Yang, Yi Zhang, Tifei Yuan, Kexin Lou, Quanying Liu
-        </font></div>
-        <div class="publish">
-          <span class="place">ICME 2026 (Spotlight)</span>
-          <span class="place"></span>
-        </div>
-        <div class="tags">
-          [<a class="tag" href="work/Paper#2480_Behavior-Guided EEG Multimodal Learning for Enhanced Addiction Diagnosis.pdf" target="_blank">Paper</a>]
-        </div>
-      </div>
-    </div> 
-
-    <div class="pub" data-selected="true">
-      <div class="pub-left">
-        <img class="intro-img frame" src="images/AS-OCT.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">AS-OCT dataset with anatomical structure segmentation and scleral spur localization in cataract and glaucoma (Under Review)</div>
-        <div class="authors">
-          <font style="font-size: 11pt;">
-          Jiongning Zhao, Yuetong Yang, <b>Xinyu Fu</b>, Weihua Yang, Yanwu Xu, et al.
-          </font>
-        </div>
-        <div class="publish">
-          <span class="place">Scientific Data</span>
-          <span class="place"></span>
-        </div>
-        <div class="tags"></div>
-      </div>
-    </div> 
-
-    <div class="pub" data-selected="true">
-      <div class="pub-left">
-        <img class="intro-img frame" src="images/GAVE.png">
-      </div>
-      <div class="pub-right">
-        <div class="title">Dataset, Baseline and Evaluation Design for Gave Challenge</div>
-        <div class="authors">
-          <font style="font-size: 11pt;">
-            Zhiwei Liu, Huihui Fang, Shandi Liu, Ping Zhang, Wenquan Xi, Changjian Wu, Zihao Zhong, <b>Xinyu Fu</b>, Yanwu Xu, et al.
-          </font>
-        </div>
-        <div class="publish">
-          <span class="place">12th MICCAl Workshop on Ophthalmic Medical lmage Analysis</span>
-          <span class="place"></span>
-        </div>
-        <div class="tags">
-          [<a class="tag" href="work/Dataset, Baseline and Evaluation Design for GAVE Challenge-final version.pdf" target="_blank">Paper</a>]
-          [<a class="tag" href="https://aistudio.baidu.com/competition/detail/1315" target="_blank">Website</a>]
-        </div>
-      </div>
-    </div> 
+    <div class="profile-col profile-col-2" id="my-contact">
+     <h1 class="text-grey-dark" id="my-name">
+      Xinyu FU
+     </h1>
+     <div class="text-grey" id="my-title">
+      South China University of Technology
+     </div>
+     <div class="text-grey-light" id="my-email">
+      xinyufu431 [at] gmail.com
+      <br/>
+      202364810311 [at] mail.scut.edu.cn
+     </div>
+    </div>
+    <div class="social-media">
+     <a aria-label="Google Scholar" class="icon-button linkedin" href="https://scholar.google.com/citations?user=g7AuSWUAAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">
+      <i class="ai ai-google-scholar-square icon-linkedin">
+      </i>
+      <span>
+      </span>
+     </a>
+     <a aria-label="GitHub" class="icon-button github" href="https://github.com/Fluorine-Brian" rel="noopener noreferrer" target="_blank">
+      <i class="fa fa-github icon-github">
+      </i>
+      <span>
+      </span>
+     </a>
+     <a aria-label="Curriculum vitae" class="icon-button github" href="work/CV.pdf" rel="noopener noreferrer" target="_blank">
+      <i class="ai ai-cv icon-github">
+      </i>
+      <span>
+      </span>
+     </a>
+     <a aria-label="Email" class="icon-button linkedin" href="mailto:xinyufu431@gmail.com" rel="noopener noreferrer" target="_blank">
+      <i class="fa fa-envelope icon-email">
+      </i>
+      <span>
+      </span>
+     </a>
+    </div>
+   </div>
   </div>
-
-  <h2 style="font-size: 24px; font-weight: 600; margin-top: 40px; margin-bottom: 20px; color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px;">
-    <i class="fa fa-certificate" aria-hidden="true"></i> Patents
-  </h2>
-
-  <div class="pub-list">
-    <div class="pub" data-selected="true">
+  <main class="page-content wrapper" id="main-content">
+   <section class="bio" id="bio">
+    <h2 class="md-heading text-left">
+     <i aria-hidden="true" class="fa fa-id-card">
+     </i>
+     About
+    </h2>
+    <div class="bio-body about-body">
+     <p class="about-text" lang="en">
+      I am a third-year undergraduate student majoring in Biomedical Engineering at
+      <a href="https://www.scut.edu.cn/en/" rel="noopener noreferrer" target="_blank">
+       South China University of Technology
+      </a>
+      . Currently, I am working as an algorithm intern at
+      <a href="https://omni-intel.cn/" rel="noopener noreferrer" target="_blank">
+       Omni Intelligence
+      </a>
+      ,
+    where I focus on advancing algorithmic research in BCI Foundation Models
+    under the supervision of Dr. Kexin Lou and Dr. Chen Wei. Previously, I was a visiting student at
+      <a href="https://www.sustech.edu.cn/en/" rel="noopener noreferrer" target="_blank">
+       Southern University of Science and Technology
+      </a>
+      ,
+    under the supervision of
+      <a href="https://www.sustech.edu.cn/en/faculties/liuquanying.html" rel="noopener noreferrer" target="_blank">
+       Prof. Quanying Liu
+      </a>
+      ,
+    where I focused on parameter-efficient personalized adaptation and test-time adaptation methods for EEG foundation models.
+    I also worked under the supervision of
+      <a href="http://hdmilab.cn/people/info?abbr=XYW" rel="noopener noreferrer" target="_blank">
+       Prof. Yanwu Xu
+      </a>
+      and
+      <a href="https://www2.scut.edu.cn/ft/2021/1102/c45109a449585/page.htm" rel="noopener noreferrer" target="_blank">
+       Prof. Lin Shu
+      </a>
+      .
+     </p>
+     <p class="about-text" lang="en">
+      My primary research interests include
+      <b>
+       BCI Foundation Models
+      </b>
+      ,
+      <b>
+       Human-AI Alignment
+      </b>
+      ,
+      <b>
+       Medical AI
+      </b>
+      , and
+      <b>
+       Human-Agent Interaction
+      </b>
+      ,
+    especially in LLMs and agentic applications. Always eager to expand my research experience,
+      <mark>
+       I am seeking opportunities for research internships in 2026 and Ph.D. positions in 2027.
+      </mark>
+      If you are interested in chatting with me, feel free to drop me an
+      <a href="mailto:xinyufu431@gmail.com" rel="noopener noreferrer" target="_blank">
+       email
+      </a>
+      .
+     </p>
+     <div>
+      <h3>
+       <i aria-hidden="true" class="fa fa-graduation-cap">
+       </i>
+       <strong>
+        Education
+       </strong>
+      </h3>
+      <div class="education-cards-container">
+       <div class="education-card">
+        <div class="education-details">
+         <div class="degree-title">
+          Visiting Student
+         </div>
+         <div class="institution-name">
+          Southern University of Science and Technology, School of Biomedical Engineering
+         </div>
+         <ul>
+          <li>
+           Advisor: Quanying Liu
+          </li>
+          <li>
+           Neural Computing &amp; Control Lab
+          </li>
+          <li>
+           2025.09 - 2026.07
+          </li>
+         </ul>
+        </div>
+        <div class="institution-logo">
+         <img alt="SUSTech Logo" decoding="async" height="263" loading="lazy" src="images/SUSTech.png" width="378"/>
+        </div>
+        <div class="institution-logo">
+         <img alt="NCC Logo" decoding="async" height="280" loading="lazy" src="images/NCC.png" width="280"/>
+        </div>
+       </div>
+       <div class="education-card">
+        <div class="education-details">
+         <div class="degree-title">
+          Bachelor of Engineering (B.Eng)
+         </div>
+         <div class="institution-name">
+          South China University of Technology
+         </div>
+         <ul>
+          <li>
+           Major: Biomedical Engineering, GPA: 3.89/4.00, Top 10%
+          </li>
+          <li>
+           2023.09 - 2027.08
+          </li>
+          <li>
+           First Prize Scholarship of School, Merit Student of School
+          </li>
+         </ul>
+        </div>
+        <div class="institution-logo">
+         <img alt="SCUT Logo" decoding="async" height="1168" loading="lazy" src="images/SCUT.png" width="1168"/>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="bio" id="news">
+    <h2 class="md-heading text-left">
+     <i aria-hidden="true" class="fa fa-fire">
+     </i>
+     News
+    </h2>
+    <div class="news-scroll-container">
+     <ul>
+      <li class="indented" data-date="[2026.09]">
+       🎉🎉One paper is accepted to NeurIPS 2026! See you in Sedney!
+      </li>
+      <li class="indented" data-date="[2026.09]">
+       🎉🎉One paper is accepted to Scientific Data (JCR Q1)
+      </li>
+      <li class="indented" data-date="[2026.06]">
+       🎉🎉Joined Shenzhen Omni-Intelligence Technology Co., Ltd. as an algorithm engineer intern!
+      </li>
+      <li class="indented" data-date="[2026.05]">
+       🎉🎉Awarded Meritorious Winner Prize for MCM/ICM Competition.
+      </li>
+      <li class="indented" data-date="[2026.05]">
+       🎉🎉One Paper is accepted to IEEE ICME 2026 as spotlight!
+      </li>
+      <li class="indented" data-date="[2026.03]">
+       🎉🎉Awarded Silver Prize in 15th Challenge Cup School Innovation Competition!
+      </li>
+      <li class="indented" data-date="[2025.11]">
+       🎉🎉Awarded first prize in 2nd Brain-Inspired Intelligence Innovation Competition (South China Region)!
+      </li>
+      <li class="indented" data-date="[2025.10]">
+       Give a talk on "Academic Development for New Students" at SCUT, Guangzhou. See [
+       <a href="https://mp.weixin.qq.com/s/sR-ihwUNjfe1d2sLBtF0eg">
+        here
+       </a>
+       ]
+      </li>
+      <li class="indented" data-date="[2025.10]">
+       🎉🎉Honored to be awarded the First Class (1%) Scholarship, the highest scholarship awarded by SCUT.
+      </li>
+      <li class="indented" data-date="[2025.10]">
+       🎉🎉Awarded third prize in Contemporary Undergraduate Mathematical Contest in Modeling, Guangdong Province.
+      </li>
+      <li class="indented" data-date="[2025.09]">
+       Participated in MICCAI 2025 and give a talk about my OMIA paper, Dajeon, South Korea. Check it out [
+       <a href="work/MICCAI2025-Certificate-6021.pdf">
+        here
+       </a>
+       ]
+      </li>
+      <li class="indented" data-date="[2025.08]">
+       Joined Neural Computing &amp; Control Lab as a visiting student.
+      </li>
+      <li class="indented" data-date="[2025.07]">
+       Awarded the first prize of Shenzhen Cup Mathematical Modeling Competition, making it to the final, Guangdong Province. See you in Shenzhen BIT-MSU University!🎉🎉
+      </li>
+      <li class="indented" data-date="[2025.07]">
+       Awarded third prize in 10TH International Biomedical Engineering Innovation Design Competition. Check it out [
+       <a href="work/参赛作品报告_最终版.pdf">
+        here
+       </a>
+       ]
+      </li>
+      <li class="indented" data-date="[2025.06]">
+       One paper accepted to 12th MICCAl Workshop on Ophthalmic Medical lmage Analysis. See you in Dajeon!🎉🎉
+      </li>
+      <li class="indented" data-date="[2025.05]">
+       🎉🎉One patent is granted. See the details
+       <a href="https://patents.google.com/patent/CN119107380A/en?oq=CN119107380">
+        here
+       </a>
+       .
+      </li>
+      <li class="indented" data-date="[2024.10]">
+       🎉🎉Awarded first prize in Contemporary Undergraduate Mathematical Contest in Modeling, Guangdong Province.
+      </li>
+     </ul>
+    </div>
+   </section>
+   <section class="timeline-brief" id="timeline">
+    <h2 class="md-heading text-left">
+     <i aria-hidden="true" class="fa fa-tasks">
+     </i>
+     Experiences
+    </h2>
+    <div class="timeline-item">
+     <div class="timeline-date">
+      <img alt="" class="social-icon" decoding="async" height="311" loading="lazy" src="images/omni-intelligence.jpg" width="407"/>
+      Jun, 2026 - Oct, 2026
+     </div>
+     <div class="timeline-title">
+      Algorithm Intern @
+      <a href="https://omni-intel.cn/" rel="noopener noreferrer" target="_blank">
+       Omni Intelligence
+      </a>
+     </div>
+     <div class="timeline-desc">
+      <div class="timeline-host">
+       Supervisor:
+       <a href="https://scholar.google.com/citations?user=F6yu2IgAAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">
+        Dr. Kexin Lou
+       </a>
+       and
+       <a href="https://hedges0-0.github.io/" rel="noopener noreferrer" target="_blank">
+        Dr. Chen Wei
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="timeline-item">
+     <div class="timeline-date">
+      <img alt="" class="social-icon" decoding="async" height="125" loading="lazy" src="images/SUSTech_3.png" width="126"/>
+      Sep, 2025 - June, 2026
+     </div>
+     <div class="timeline-title">
+      Visiting Student @
+      <a href="https://www.sustech.edu.cn/en/" rel="noopener noreferrer" target="_blank">
+       NCC Lab, SUSTech
+      </a>
+     </div>
+     <div class="timeline-desc">
+      <div class="timeline-host">
+       Supervisor:
+       <a href="https://www.sustech.edu.cn/en/faculties/liuquanying.html" rel="noopener noreferrer" target="_blank">
+        Prof. Quanying Liu
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="timeline-item">
+     <div class="timeline-date">
+      <img alt="" class="social-icon" decoding="async" height="432" loading="lazy" src="images/FutureTECH.png" width="473"/>
+      Nov, 2024 - July, 2025
+     </div>
+     <div class="timeline-title">
+      Research Student @
+      <a href="https://www2.scut.edu.cn/ft/2021/1102/c45109a449585/page.htm" rel="noopener noreferrer" target="_blank">
+       MRII Lab, SCUT
+      </a>
+     </div>
+     <div class="timeline-desc">
+      <div class="timeline-host">
+       Supervisor:
+       <a href="https://www2.scut.edu.cn/ft/2021/1102/c45109a449585/page.htm" rel="noopener noreferrer" target="_blank">
+        Dr. Lin Shu
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="timeline-item">
+     <div class="timeline-date">
+      <img alt="" class="social-icon" decoding="async" height="640" loading="lazy" src="images/HDMI.jpg" width="640"/>
+      Mar, 2024 - July, 2025
+     </div>
+     <div class="timeline-title">
+      Research Student @
+      <a href="http://hdmilab.cn/research" rel="noopener noreferrer" target="_blank">
+       HDMI Lab, SCUT
+      </a>
+     </div>
+     <div class="timeline-desc">
+      <div class="timeline-host">
+       Supervisor:
+       <a href="https://scholar.google.com/citations?hl=en&amp;user=0jP8f7sAAAAJ" rel="noopener noreferrer" target="_blank">
+        Dr. Yanwu Xu
+       </a>
+       and
+       <a href="https://scholar.google.com/citations?hl=en&amp;user=GmntaOwAAAAJ" rel="noopener noreferrer" target="_blank">
+        Dr. Huihui Fang
+       </a>
+      </div>
+     </div>
+    </div>
+    <div class="timeline-item">
+     <div class="timeline-date">
+      <img alt="" class="social-icon" decoding="async" height="397" loading="lazy" src="images/生物医学科学与工程学院徽章.jpg" width="406"/>
+      Dec, 2023 - July, 2024
+     </div>
+     <div class="timeline-title">
+      Research Student @
+      <a href="https://www.x-mol.com/groups/scut-minilab?lang=en" rel="noopener noreferrer" target="_blank">
+       MINI Lab, SCUT
+      </a>
+     </div>
+     <div class="timeline-desc">
+      <div class="timeline-host">
+       Supervisor:
+       <a href="https://scholar.google.com/citations?hl=en&amp;user=fAVy6KIAAAAJ" rel="noopener noreferrer" target="_blank">
+        Dr. Kai Wu
+       </a>
+      </div>
+     </div>
+    </div>
+    <br/>
+   </section>
+   <section class="publications" id="publications">
+    <h2 class="md-heading text-left">
+     <i aria-hidden="true" class="fa fa-file">
+     </i>
+     Publications &amp; Patents
+    </h2>
+    <h3>
+     <i aria-hidden="true" class="fa fa-book">
+     </i>
+     Publications
+    </h3>
+    <div class="pub-list">
+     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="images/Patent1.png" alt="Patent Thumbnail"> 
+       <img alt="" class="intro-img frame" decoding="async" height="979" loading="lazy" src="images/neuroTech.png" width="1755"/>
       </div>
       <div class="pub-right">
-        <div class="title">Anterior segment parameter measurement method and device, electronic device, and storage medium</div>
-        <div class="authors">
-          <font style="font-size: 11pt;">
-            Weihua Yang, Jingfeng Mou, Changfeng Pan, Jia Liu, Qifan Yang, <b>Xinyu Fu</b>, Ping Guo, Huihui Fang, Yanwu Xu
-          </font>
-        </div>
-        <div class="publish">
-          <span class="place">Chinese Invention Patent, CN119107380A, 2025 (Granted)</span> 
-          <span class="place"></span>
-        </div>
-        <div class="tags">
-          [<a class="tag" href="work/CN119107380A.pdf" target="_blank">PDF</a>]
-          [<a class="tag" href="https://patents.google.com/patent/CN119107380A/en?oq=CN119107380" target="_blank">Patent Link</a>]
-        </div>
+       <div class="title">
+        NeuroTeCh: Geometry-Aware Multi-View Physiological Pretraining for Heterogeneous EEG Foundation Models
+       </div>
+       <div class="authors">
+       </div>
+       <div class="publish">
+        <span class="place">
+         Under Review
+        </span>
+        <span class="place">
+        </span>
+       </div>
+       <div class="tags">
+       </div>
       </div>
-    </div>
-
-    <div class="pub" data-selected="true">
+     </div>
+     <div class="pub">
       <div class="pub-left">
-        <img class="intro-img frame" src="images/Patent2.png" alt="Patent Thumbnail"> 
+       <img alt="" class="intro-img frame" decoding="async" height="752" loading="lazy" src="images/ICML2026.png" width="1890"/>
       </div>
       <div class="pub-right">
-        <div class="title">Preparation method and application of bismuth ion chelated ultrasmall gold nanoparticles cleared by kidneys</div>
-        <div class="authors">
-          <font style="font-size: 11pt;">
-            Xiang Li, Hanmiao Yu, <b>Xinyu Fu</b>, Bujie Du, Xingya Jiang
-          </font>
-        </div>
-        <div class="publish">
-          <span class="place">Chinese Invention Patent, CN120022387A, 2025 (Public)</span> 
-          <span class="place"></span>
-        </div>
-        <div class="tags">
-          [<a class="tag" href="work/CN120022387A.pdf" target="_blank">PDF</a>]
-          [<a class="tag" href="https://patents.google.com/patent/CN120022387A/en?oq=CN202510206802" target="_blank">Patent Link</a>]
-        </div>
+       <div class="title">
+        Rest-Tuning: Data-Efficient Adaptation of EEG Foundation Models to Individuals via Resting-State Signals
+       </div>
+       <div class="authors">
+        Yinuo Zhang
+        <sup>
+         *
+        </sup>
+        ,
+        <b>
+         Xinyu Fu
+         <sup>
+          *
+         </sup>
+        </b>
+        , Qing Wang, Yinte Zhang, Junjie Yu, Kexin Lou, Quanying Liu
+        <br/>
+        <small>
+         * Equal contribution (co-first authors).
+        </small>
+       </div>
+       <div class="publish">
+        <span class="place">
+         NeurIPS 2026
+        </span>
+        <span class="place">
+        </span>
+       </div>
+       <div class="tags">
+       </div>
       </div>
+     </div>
+     <div class="pub">
+      <div class="pub-left">
+       <img alt="" class="intro-img frame" decoding="async" height="624" loading="lazy" src="images/ICME2026.png" width="1013"/>
+      </div>
+      <div class="pub-right">
+       <div class="title">
+        Behavior-Guided EEG Multimodal Learning for Enhanced Addiction Diagnosis
+       </div>
+       <div class="authors">
+        Yinuo Zhang, Yinte Zhang, Song Wang,
+        <b>
+         Xinyu Fu
+        </b>
+        , Yichen Yang, Yi Zhang, Tifei Yuan, Kexin Lou, Quanying Liu
+       </div>
+       <div class="publish">
+        <span class="place">
+         ICME 2026 (Spotlight)
+        </span>
+        <span class="place">
+        </span>
+       </div>
+       <div class="tags">
+        [
+        <a class="tag" href="work/Paper%232480_Behavior-Guided EEG Multimodal Learning for Enhanced Addiction Diagnosis.pdf" rel="noopener noreferrer" target="_blank">
+         Paper
+        </a>
+        ]
+       </div>
+      </div>
+     </div>
+     <div class="pub">
+      <div class="pub-left">
+       <img alt="" class="intro-img frame" decoding="async" height="1095" loading="lazy" src="images/AS-OCT.png" width="1910"/>
+      </div>
+      <div class="pub-right">
+       <div class="title">
+        AS-OCT dataset with anatomical structure segmentation and scleral spur localization in cataract and glaucoma (Under Review)
+       </div>
+       <div class="authors">
+        Jiongning Zhao, Yuetong Yang,
+        <b>
+         Xinyu Fu
+        </b>
+        , Weihua Yang, Yanwu Xu, et al.
+       </div>
+       <div class="publish">
+        <span class="place">
+         Scientific Data
+        </span>
+        <span class="place">
+        </span>
+       </div>
+       <div class="tags">
+       </div>
+      </div>
+     </div>
+     <div class="pub">
+      <div class="pub-left">
+       <img alt="" class="intro-img frame" decoding="async" height="686" loading="lazy" src="images/GAVE.png" width="1135"/>
+      </div>
+      <div class="pub-right">
+       <div class="title">
+        Dataset, Baseline and Evaluation Design for Gave Challenge
+       </div>
+       <div class="authors">
+        Zhiwei Liu, Huihui Fang, Shandi Liu, Ping Zhang, Wenquan Xi, Changjian Wu, Zihao Zhong,
+        <b>
+         Xinyu Fu
+        </b>
+        , Yanwu Xu, et al.
+       </div>
+       <div class="publish">
+        <span class="place">
+         12th MICCAl Workshop on Ophthalmic Medical lmage Analysis
+        </span>
+        <span class="place">
+        </span>
+       </div>
+       <div class="tags">
+        [
+        <a class="tag" href="work/Dataset, Baseline and Evaluation Design for GAVE Challenge-final version.pdf" rel="noopener noreferrer" target="_blank">
+         Paper
+        </a>
+        ]
+          [
+        <a class="tag" href="https://aistudio.baidu.com/competition/detail/1315" rel="noopener noreferrer" target="_blank">
+         Website
+        </a>
+        ]
+       </div>
+      </div>
+     </div>
     </div>
-  </div>
-
-</div> 
-
-
-
-
-	
-<!-- JavaScript to handle button clicks
-<script>
-  // Get the buttons and publications
-  const showSelectedBtn = document.getElementById('show-selected-btn');
-  const showAllBtn = document.getElementById('show-all-btn');
-  const publications = document.querySelectorAll('.pub');
-
-  // Add event listener to 'Show Selected Publication' button
-  showSelectedBtn.addEventListener('click', function() {
-    publications.forEach(pub => {
-      if (pub.getAttribute('data-selected') === 'true') {
-        pub.style.display = 'block';  // Show selected publication
-      } else {
-        pub.style.display = 'none';  // Hide other publications
-      }
-    });
-  });
-
-  // Add event listener to 'Show All' button
-  showAllBtn.addEventListener('click', function() {
-    publications.forEach(pub => {
-      pub.style.display = 'block';  // Show all publications
-    });
-  });
-</script>
-
-<script>
-  const repos = [
-    { owner: "alibaba-damo-academy", repo: "WorldVLA", starId: "star-count", forkId: "fork-count" },
-    { owner: "GAI4Manipulation", repo: "AwesomeGAIManipulation", starId: "star-count-2", forkId: "fork-count-2" },
-    { owner: "Jun-CEN", repo: "CMDFusion", starId: "star-count-3", forkId: "fork-count-3" },
-    { owner: "Jun-CEN", repo: "SegmentAnyRGBD", starId: "star-count-4", forkId: "fork-count-4" },
-    { owner: "Jun-CEN", repo: "PSL", starId: "star-count-5", forkId: "fork-count-5" },
-    { owner: "Jun-CEN", repo: "Unified-Open-Set-Recognition", starId: "star-count-6", forkId: "fork-count-6" },
-    { owner: "Jun-CEN", repo: "Open-world-3D-semantic-segmentation", starId: "star-count-7", forkId: "fork-count-7" },
-    { owner: "Jun-CEN", repo: "Open-World-Semantic-Segmentation", starId: "star-count-8", forkId: "fork-count-8" },
-    { owner: "Jingkang50", repo: "PSG4D", starId: "star-count-9", forkId: "fork-count-9" },
-    { owner: "youquanl", repo: "Segment-Any-Point-Cloud", starId: "star-count-10", forkId: "fork-count-10" }
-  ];
-
-  async function loadGitHubStats() {
-    for (const { owner, repo, starId, forkId } of repos) {
-      try {
-        const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`);
-        if (!res.ok) throw new Error("GitHub API error");
-        const data = await res.json();
-        document.getElementById(starId).innerText = data.stargazers_count ?? "–";
-        document.getElementById(forkId).innerText = data.forks_count ?? "–";
-      } catch (e) {
-        console.error(`Failed to load stats for ${owner}/${repo}`, e);
-        document.getElementById(starId).innerText = "–";
-        document.getElementById(forkId).innerText = "–";
-      }
-    }
-  }
-
-  loadGitHubStats();
-</script>
-
-
-<div class="wrapper">
-  <div id="codebase" class="bio">
-    <div class="bio-body" style="overflow:hidden;">
-      <h1 class="md-heading text-left">
-        <i class="fa fa-tasks" aria-hidden="true"></i>
-        GitHub
-      </h1>  
-      <div class="card-container">
-
-        <div class="github-card">
-          <div>
-            <a class="repo-link" href="https://github.com/Fluorine-Brian/Code-for-AS-OCT-Dataset" target="_blank">
-              Fluorine-Brian/<strong>Code-for-AS-OCT-Dataset</strong>
-            </a>
-            <span class="label">Project</span>
-          </div>
-          <div class="description">
-            ASOCT-MSDC : AS-OCT Multi-Structure & Disease Classification Dataset.
-          </div>
-          <div class="meta">
-            <div class="dot"></div>
-            <div>Python</div>
-            <a href="https://github.com/Fluorine-Brian/Code-for-AS-OCT-Dataset/stargazers" target="_blank">
-              <svg fill="currentColor" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-                <path d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 
-                14.5L369.8 316.2 115.9 353.1c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 
-                179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 
-                119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 
-                26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 
-                8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z"></path>
-              </svg>
-              Star &nbsp;  <span id="star-count">–</span>
-            </a>
-            <a href="https://github.com/Fluorine-Brian/Code-for-AS-OCT-Dataset/network/members" target="_blank">
-              <svg fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 4a2 2 0 1 0-2.47 1.94V7a.48.48 0 0 1-.27.44L8.49 
-                8.88l-2.76-1.4A.49.49 0 0 1 5.46 7V5.94a2 2 0 1 0-1 
-                0V7a1.51 1.51 0 0 0 .82 1.34L8 
-                9.74v1.32a2 2 0 1 0 1 0V9.74l2.7-1.36A1.49 
-                1.49 0 0 0 12.52 7V5.92A2 2 0 0 0 14 
-                4zM4 4a1 1 0 1 1 2 0 1 1 0 0 1-2 
-                0zm5.47 9a1 1 0 1 1-2 0 1 1 0 0 
-                1 2 0zM12 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z">
-                </path>
-              </svg>
-              Fork &nbsp; <span id="fork-count">–</span>
-            </a>
-          </div>
-        </div>
-
-        
-        </div>
+    <h3>
+     <i aria-hidden="true" class="fa fa-certificate">
+     </i>
+     Patents
+    </h3>
+    <div class="pub-list">
+     <div class="pub">
+      <div class="pub-left">
+       <img alt="Patent Thumbnail" class="intro-img frame" decoding="async" height="1029" loading="lazy" src="images/Patent1.png" width="1610"/>
+      </div>
+      <div class="pub-right">
+       <div class="title">
+        Anterior segment parameter measurement method and device, electronic device, and storage medium
+       </div>
+       <div class="authors">
+        Weihua Yang, Jingfeng Mou, Changfeng Pan, Jia Liu, Qifan Yang,
+        <b>
+         Xinyu Fu
+        </b>
+        , Ping Guo, Huihui Fang, Yanwu Xu
+       </div>
+       <div class="publish">
+        <span class="place">
+         Chinese Invention Patent, CN119107380A, 2025 (Granted)
+        </span>
+        <span class="place">
+        </span>
+       </div>
+       <div class="tags">
+        [
+        <a class="tag" href="work/CN119107380A.pdf" rel="noopener noreferrer" target="_blank">
+         PDF
+        </a>
+        ]
+          [
+        <a class="tag" href="https://patents.google.com/patent/CN119107380A/en?oq=CN119107380" rel="noopener noreferrer" target="_blank">
+         Patent Link
+        </a>
+        ]
+       </div>
+      </div>
+     </div>
+     <div class="pub">
+      <div class="pub-left">
+       <img alt="Patent Thumbnail" class="intro-img frame" decoding="async" height="352" loading="lazy" src="images/Patent2.png" width="1084"/>
+      </div>
+      <div class="pub-right">
+       <div class="title">
+        Preparation method and application of bismuth ion chelated ultrasmall gold nanoparticles cleared by kidneys
+       </div>
+       <div class="authors">
+        Xiang Li, Hanmiao Yu,
+        <b>
+         Xinyu Fu
+        </b>
+        , Bujie Du, Xingya Jiang
+       </div>
+       <div class="publish">
+        <span class="place">
+         Chinese Invention Patent, CN120022387A, 2025 (Public)
+        </span>
+        <span class="place">
+        </span>
+       </div>
+       <div class="tags">
+        [
+        <a class="tag" href="work/CN120022387A.pdf" rel="noopener noreferrer" target="_blank">
+         PDF
+        </a>
+        ]
+          [
+        <a class="tag" href="https://patents.google.com/patent/CN120022387A/en?oq=CN202510206802" rel="noopener noreferrer" target="_blank">
+         Patent Link
+        </a>
+        ]
+       </div>
+      </div>
+     </div>
     </div>
-  </div>
-</div> -->
-
-<div class="wrapper">
-  <div id="awards" class="bio">
-    <h1 class="md-heading text-left">
-      <i class="fa fa-tasks" aria-hidden="true"></i>
-      Selected Honors & Awards
-    </h1>
+   </section>
+   <section class="bio" id="awards">
+    <h2 class="md-heading text-left">
+     <i aria-hidden="true" class="fa fa-tasks">
+     </i>
+     Selected Honors &amp; Awards
+    </h2>
     <ul>
-  	<li>First Class Scholarship of School, SCUT, 2025.</li>
-	<li> Third Class Scholarship of School, SCUT, 2024.</li>
-  <li>  EVE Energy Co., Ltd Scholarship, SCUT, 2024.</li>
-  <li>  Xinhaofang Scholarship, SCUT, 2025.</li>
-	<li> Merit Student of School, SCUT, 2023-2026.</li>
-  <li> Meritorious Winner in Mathematical Contest in Modeling (MCM/ICM), 2026.</li>
-	<li> Honorable Mention in Mathematical Contest in Modeling (MCM/ICM), 2025.</li>
-  <li> First Prize in Contemporary Undergraduate Mathematical Contest in Modeling (Guangdong), 2024.</li>
-  <li> Third Prize in Contemporary Undergraduate Mathematical Contest in Modeling (Guangdong), 2025.</li>
-  <li> First Prize in 2nd Brain-Inspired Intelligence Innovation Competition (South China Region), 2025.</li>
-  <li> Special Prize in School's "Challenge Cup" Competition,  SCUT, 2025.</li>
-  <li> First Prize in Shenzhen Cup Mathematical Modeling Competition (Guangdong), 2025.</li>
-  <li> Second Prize in "Great Bay Area Cup" Financial Mathematical Modeling Competition, 2024.</li>
-  <li> Second Prize in MathorCup Math Application Challenge of South China Region, 2025.</li>
-  <li> Third Prize in 10TH International Biomedical Engineering Innovation Design Competition, 2025.</li>
-  
+     <li>
+      First Class Scholarship of School, SCUT, 2025.
+     </li>
+     <li>
+      Third Class Scholarship of School, SCUT, 2024.
+     </li>
+     <li>
+      EVE Energy Co., Ltd Scholarship, SCUT, 2024.
+     </li>
+     <li>
+      Xinhaofang Scholarship, SCUT, 2025.
+     </li>
+     <li>
+      Merit Student of School, SCUT, 2023-2026.
+     </li>
+     <li>
+      Meritorious Winner in Mathematical Contest in Modeling (MCM/ICM), 2026.
+     </li>
+     <li>
+      Honorable Mention in Mathematical Contest in Modeling (MCM/ICM), 2025.
+     </li>
+     <li>
+      First Prize in Contemporary Undergraduate Mathematical Contest in Modeling (Guangdong), 2024.
+     </li>
+     <li>
+      Third Prize in Contemporary Undergraduate Mathematical Contest in Modeling (Guangdong), 2025.
+     </li>
+     <li>
+      First Prize in 2nd Brain-Inspired Intelligence Innovation Competition (South China Region), 2025.
+     </li>
+     <li>
+      Special Prize in School's "Challenge Cup" Competition,  SCUT, 2025.
+     </li>
+     <li>
+      First Prize in Shenzhen Cup Mathematical Modeling Competition (Guangdong), 2025.
+     </li>
+     <li>
+      Second Prize in "Great Bay Area Cup" Financial Mathematical Modeling Competition, 2024.
+     </li>
+     <li>
+      Second Prize in MathorCup Math Application Challenge of South China Region, 2025.
+     </li>
+     <li>
+      Third Prize in 10TH International Biomedical Engineering Innovation Design Competition, 2025.
+     </li>
     </ul>
-  </div>
-</div>
-
-
-
-
-
-<div class="wrapper" style="margin-top: 50px;">
-  <div id="showcase">
-    
-
-    <h2 class="md-heading" style="margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px;">
-        <i class="fa fa-camera" aria-hidden="true"></i> Precious Moments
+   </section>
+   <section id="showcase">
+    <h2 class="md-heading">
+     <i aria-hidden="true" class="fa fa-camera">
+     </i>
+     Precious Moments
     </h2>
-
     <div class="moments-category-list">
-        
-        <div class="moment-category-card">
-            <div class="moment-text">
-                <h3><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" alt="South Korea Flag" style="height: 14px; vertical-align: middle; margin-right: 5px; border: 1px solid #eee; border-radius: 2px;"> Enjoy my journey in South Korea</h3>
-                <p>My trip to South Korea, where I take a visit to KAIST, Yonsei University, Seoul National University and Ewha Women University.</p>
-            </div>
-            <div class="moment-image-row">
-                <img src="images/Seoul National U.jpg" alt="Moment 1">
-                <img src="images/Seoul National U 2.jpg" alt="Moment 2">
-                <img src="images/Ewha Woman U.jpg" alt="Moment 1">
-                <img src="images/KAIST.jpg" alt="Moment 2">
-            </div>
-        </div>
-
-        <div class="moment-category-card">
-            <div class="moment-text">
-                <h3>🧠 Visiting in NCC Lab</h3>
-                <p>I am really impressed by the research spirit and collaborative environment in the NCC Lab, which really help me improve a lot.</p>
-            </div>
-            <div class="moment-image-row">
-                <img src="images/showcase3.jpg" alt="Moment 3">
-                <img src="images/showcase10.jpg" alt="Moment 4">
-            </div>
-        </div>
-
-        <div class="moment-category-card">
-            <div class="moment-text">
-                <h3>👁️ First academic conference experience in MICCAI 2025!</h3>
-                <p>Profoundingly inspired by the cutting-edge research of AI Medical Imaging presented at the conference. Get in touch with leading researchers in Singapore.</p>
-            </div>
-            <div class="moment-image-row">
-                <img src="images/showcase2.jpg" alt="Moment 3">
-                <img src="images/showcase4.jpg" alt="Moment 4">
-            </div>
-        </div>
-
-        <div class="moment-category-card">
-            <div class="moment-text">
-                <h3>🌱 Participated in the "Three Rural" Social Practice Program</h3>
-                <p>Implemented a teaching program in Jiangmen and Jieyang, providing educational support to local students.</p>
-            </div>
-            <div class="moment-image-row">
-                <img src="images/showcase5.jpg" alt="Moment 3">
-                <img src="images/showcase1.jpg" alt="Moment 4">
-            </div>
-        </div>
-
+     <div class="moment-category-card">
+      <div class="moment-text">
+       <h3>
+        <img alt="South Korea Flag" class="country-flag" decoding="async" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg"/>
+        Enjoy my journey in South Korea
+       </h3>
+       <p>
+        My trip to South Korea, where I take a visit to KAIST, Yonsei University, Seoul National University and Ewha Women University.
+       </p>
+      </div>
+      <div aria-label="Photo gallery, scroll horizontally for more photos" class="moment-image-row" role="region" tabindex="0">
+       <img alt="Moment 1" decoding="async" height="3072" loading="lazy" src="images/Seoul National U.jpg" width="4096"/>
+       <img alt="Moment 2" decoding="async" height="3072" loading="lazy" src="images/Seoul National U 2.jpg" width="4096"/>
+       <img alt="Moment 1" decoding="async" height="3456" loading="lazy" src="images/Ewha Woman U.jpg" width="4608"/>
+       <img alt="Moment 2" decoding="async" height="3072" loading="lazy" src="images/KAIST.jpg" width="4096"/>
+      </div>
+     </div>
+     <div class="moment-category-card">
+      <div class="moment-text">
+       <h3>
+        🧠 Visiting in NCC Lab
+       </h3>
+       <p>
+        I am really impressed by the research spirit and collaborative environment in the NCC Lab, which really help me improve a lot.
+       </p>
+      </div>
+      <div aria-label="Photo gallery, scroll horizontally for more photos" class="moment-image-row" role="region" tabindex="0">
+       <img alt="Moment 3" decoding="async" height="1279" loading="lazy" src="images/showcase3.jpg" width="1706"/>
+       <img alt="Moment 4" decoding="async" height="1264" loading="lazy" src="images/showcase10.jpg" width="2020"/>
+      </div>
+     </div>
+     <div class="moment-category-card">
+      <div class="moment-text">
+       <h3>
+        👁️ First academic conference experience in MICCAI 2025!
+       </h3>
+       <p>
+        Profoundingly inspired by the cutting-edge research of AI Medical Imaging presented at the conference. Get in touch with leading researchers in Singapore.
+       </p>
+      </div>
+      <div aria-label="Photo gallery, scroll horizontally for more photos" class="moment-image-row" role="region" tabindex="0">
+       <img alt="Moment 3" decoding="async" height="1552" loading="lazy" src="images/showcase2.jpg" width="3924"/>
+       <img alt="Moment 4" decoding="async" height="1707" loading="lazy" src="images/showcase4.jpg" width="1280"/>
+      </div>
+     </div>
+     <div class="moment-category-card">
+      <div class="moment-text">
+       <h3>
+        🌱 Participated in the "Three Rural" Social Practice Program
+       </h3>
+       <p>
+        Implemented a teaching program in Jiangmen and Jieyang, providing educational support to local students.
+       </p>
+      </div>
+      <div aria-label="Photo gallery, scroll horizontally for more photos" class="moment-image-row" role="region" tabindex="0">
+       <img alt="Moment 3" decoding="async" height="1915" loading="lazy" src="images/showcase5.jpg" width="2427"/>
+       <img alt="Moment 4" decoding="async" height="2690" loading="lazy" src="images/showcase1.jpg" width="3863"/>
+      </div>
+     </div>
     </div>
-
-    <div class="scrolling-container" style="margin-top: 30px;">
-        <h3 style="font-size: 18px; font-weight: 600; color: #333; margin-bottom: 15px;">More Captures</h3>
-        <div class="scrolling-track">
-            <img src="images/showcase6.jpg" alt="Moment 6">
-            <img src="images/showcase7.jpg" alt="Moment 7">
-            <img src="images/showcase8.jpg" alt="Moment 8">
-            <img src="images/showcase9.jpg" alt="Moment 9">
-            <img src="images/sysu 1.jpg" alt="Moment 10">
-            <img src="images/yellow river.jpg" alt="Moment 10">
-            <img src="images/sanya.jpg" alt="Moment 10">
-            
-            <img src="images/showcase6.jpg" alt="Moment 6">
-            <img src="images/showcase7.jpg" alt="Moment 7">
-            <img src="images/showcase8.jpg" alt="Moment 8">
-            <img src="images/showcase9.jpg" alt="Moment 9">
-            <img src="images/sysu 1.jpg" alt="Moment 10">
-            <img src="images/yellow river.jpg" alt="Moment 10">
-            <img src="images/sanya.jpg" alt="Moment 10">
-        </div>
+    <div class="scrolling-container">
+     <h3>
+      More Captures
+     </h3>
+     <div aria-label="Photo gallery, scroll horizontally for more photos" class="scrolling-track" role="region" tabindex="0">
+      <img alt="Moment 6" decoding="async" height="3024" loading="lazy" src="images/showcase6.jpg" width="4032"/>
+      <img alt="Moment 7" decoding="async" height="3456" loading="lazy" src="images/showcase7.jpg" width="4608"/>
+      <img alt="Moment 8" decoding="async" height="3456" loading="lazy" src="images/showcase8.jpg" width="4608"/>
+      <img alt="Moment 9" decoding="async" height="2657" loading="lazy" src="images/showcase9.jpg" width="3904"/>
+      <img alt="Moment 10" decoding="async" height="1279" loading="lazy" src="images/sysu 1.jpg" width="1706"/>
+      <img alt="Moment 10" decoding="async" height="1280" loading="lazy" src="images/yellow river.jpg" width="1706"/>
+      <img alt="Moment 10" decoding="async" height="1279" loading="lazy" src="images/sanya.jpg" width="1706"/>
+     </div>
     </div>
-  </div>
-</div>
-
-<div class="wrapper" style="margin-top: 40px; margin-bottom: 40px;">
-    <h2 class="md-heading" style="border-top: 1px solid #eee; padding-top: 20px;">
-        <i class="fa fa-users" aria-hidden="true"></i> Friends & Colleagues
+   </section>
+   <section class="friends" id="friends">
+    <h2 class="md-heading">
+     <i aria-hidden="true" class="fa fa-users">
+     </i>
+     Friends &amp; Colleagues
     </h2>
-    
     <div class="friends-card-grid">
-        
-        <div class="friend-profile-card">
-            <img src="images/Haojun_Tang.png" alt="Haojun Tang" class="friend-card-avatar">
-            
-            <div class="friend-card-info">
-                <div class="friend-name">Haojun Tang</div>
-                <div class="friend-org">Central South University</div>
-                <div class="friend-research">3D Vision for Photogrammetry / Vision-Language Navigation for UAVs</div>
-                <a href="https://donaldtrump-coder.github.io/" target="_blank" class="friend-link">
-                    Personal Page <i class="fa fa-external-link" aria-hidden="true" style="font-size: 12px; margin-left: 3px;"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="friend-profile-card">
-            <img src="images/Beijia Huang.png" alt="Beijia Huang" class="friend-card-avatar">
-            
-            <div class="friend-card-info">
-                <div class="friend-name">Beijia Huang</div>
-                <div class="friend-org">Central South University</div>
-                <div class="friend-research">AI Application Development / Java</div>
-                <a href="https://breadicecream.github.io/" target="_blank" class="friend-link">
-                    Personal Page <i class="fa fa-external-link" aria-hidden="true" style="font-size: 12px; margin-left: 3px;"></i>
-                </a>
-            </div>
-        </div>
-
-        <div class="friend-profile-card">
-            <img src="images/Vincent.jpg" alt="Vincent Liang" class="friend-card-avatar">
-            
-            <div class="friend-card-info">
-                <div class="friend-name">Vincent Liang</div>
-                <div class="friend-org">South China University of Technology & UC Berkeley</div>
-                <div class="friend-research">Agentic Multimodal Model / Reinforcement Learning</div>
-                <a href="https://v1nc3ntl1ang.github.io/" target="_blank" class="friend-link">
-                    Personal Page <i class="fa fa-external-link" aria-hidden="true" style="font-size: 12px; margin-left: 3px;"></i>
-                </a>
-            </div>
-        </div>
-
-        </div>
-</div>
-
-<!-- <div style="display: flex; justify-content: center; align-items: center;">
-  <div style="max-width: 400px; width: 100%;">
-    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=JnrDhDPzTyn1S_HgmA14DrjYSe0AvTkHHBjoKa2Gv7w&cl=ffffff&w=a"></script>
-  </div>
-</div> -->
-
-<div style="display: flex; justify-content: center; align-items: center;">
-  <div style="max-width: 400px; width: 100%;">
-    <script id="_waub9k">var _wau = _wau || []; _wau.push(["map", "wtue6836gk", "b9k", "420", "210", "neosat", "default-red"]);</script><script async src="//waust.at/m.js"></script>
-  </div>
-</div>
-
-<div style="display: flex; justify-content: center; align-items: center;">
-  <div style="max-width: 400px; width: 100%;">
-<a href="https://info.flagcounter.com/27Df"><img src="https://s01.flagcounter.com/countxl/27Df/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-  </div>
-</div>
-
-<footer class="site-footer">
-  <div class="wrapper">
+     <div class="friend-profile-card">
+      <img alt="Haojun Tang" class="friend-card-avatar" decoding="async" height="882" loading="lazy" src="images/Haojun_Tang.png" width="830"/>
+      <div class="friend-card-info">
+       <div class="friend-name">
+        Haojun Tang
+       </div>
+       <div class="friend-org">
+        Central South University
+       </div>
+       <div class="friend-research">
+        3D Vision for Photogrammetry / Vision-Language Navigation for UAVs
+       </div>
+       <a class="friend-link" href="https://donaldtrump-coder.github.io/" rel="noopener noreferrer" target="_blank">
+        Personal Page
+        <i aria-hidden="true" class="fa fa-external-link">
+        </i>
+       </a>
+      </div>
+     </div>
+     <div class="friend-profile-card">
+      <img alt="Beijia Huang" class="friend-card-avatar" decoding="async" height="237" loading="lazy" src="images/Beijia Huang.png" width="223"/>
+      <div class="friend-card-info">
+       <div class="friend-name">
+        Beijia Huang
+       </div>
+       <div class="friend-org">
+        Central South University
+       </div>
+       <div class="friend-research">
+        AI Application Development / Java
+       </div>
+       <a class="friend-link" href="https://breadicecream.github.io/" rel="noopener noreferrer" target="_blank">
+        Personal Page
+        <i aria-hidden="true" class="fa fa-external-link">
+        </i>
+       </a>
+      </div>
+     </div>
+     <div class="friend-profile-card">
+      <img alt="Vincent Liang" class="friend-card-avatar" decoding="async" height="512" loading="lazy" src="images/Vincent.jpg" width="512"/>
+      <div class="friend-card-info">
+       <div class="friend-name">
+        Vincent Liang
+       </div>
+       <div class="friend-org">
+        South China University of Technology &amp; UC Berkeley
+       </div>
+       <div class="friend-research">
+        Agentic Multimodal Model / Reinforcement Learning
+       </div>
+       <a class="friend-link" href="https://v1nc3ntl1ang.github.io/" rel="noopener noreferrer" target="_blank">
+        Personal Page
+        <i aria-hidden="true" class="fa fa-external-link">
+        </i>
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <div aria-label="Visitor statistics" class="visitor-stats">
+    <div class="visitor-map">
+     <script id="_waub9k">
+      var _wau = _wau || []; _wau.push(["map", "wtue6836gk", "b9k", "420", "210", "neosat", "default-red"]);
+     </script>
+     <script async="" src="//waust.at/m.js">
+     </script>
+    </div>
+    <div class="visitor-counter">
+     <a href="https://info.flagcounter.com/27Df">
+      <img alt="Flag Counter" border="0" decoding="async" loading="lazy" src="https://s01.flagcounter.com/countxl/27Df/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"/>
+     </a>
+    </div>
+   </div>
+  </main>
+  <footer class="site-footer">
+   <div class="wrapper">
     <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>Personal Email:</li>
-          <li><a href="mailto:">xinyufu431 [at] gmail.com</a></li>
-          
-        </ul>
-      </div>
-
-      <div class="footer-col  footer-col-2">
-          <a href="https://scholar.google.com/citations?user=7SKAhBwAAAAJ&hl=en" target="_blank" class="icon-button github">
-          <i class="ai ai-google-scholar-square icon-github"></i>
-            <span></span>
-          </a>
-
-          <a href="https://github.com/Jun-CEN" target="_blank" class="icon-button github">
-            <i class="fa fa-github icon-github"></i>
-            <span></span>
-          </a>
-
-          <a href="https://www.linkedin.com/in/jun-cen-45b995219/" target="_blank" class="icon-button linkedin">
-            <i class="fa fa-linkedin icon-linkedin"></i>
-            <span></span>
-          </a>
-         
-          <a href="work/Resume_Jun_CEN.pdf" target="_blank" class="icon-button github">
-            <i class="ai ai-cv icon-github"></i>
-            <span></span>
-          </a>
-      </div>
-	<div class="footer-col footer-col-3">
-    	<!--<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fwillhua127.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a> -->
-	<!-- <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?user=Lxe71v4AAAAJ&hl=en&url=https%3A%2F%2Fscholar.google.com%2Fcitations&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a> -->
-		<p class="text">Last updated: June, 2026.</p>
-	</div>
-  </div>
-  </div>
-
-</footer>
-    <div class="back-to-top">Top</div>
-
-  
-
-
-<script type="text/javascript">
-jQuery(document).ready(function() {
-    var offset = 220;
-    var duration = 500;
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-            jQuery('.back-to-top').fadeIn(duration);
-        } else {
-            jQuery('.back-to-top').fadeOut(duration);
-    
-        }
-    });
-    jQuery('.back-to-top').click(function(event) {
-        event.preventDefault();
-        jQuery('html, body').animate({scrollTop: 0}, duration);
-        return false;
-    })
-});
-</script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-      const themeToggleBtn = document.getElementById("theme-toggle");
-      const themeIcon = document.getElementById("theme-icon");
-      
-      // 1. 检查浏览器本地存储，看看用户之前选的是什么模式
-      const currentTheme = localStorage.getItem("theme");
-      
-      // 2. 如果之前存的是 dark，就给网页加上暗黑模式，并把图标换成太阳
-      if (currentTheme === "dark") {
-          document.body.classList.add("dark-mode");
-          themeIcon.classList.remove("fa-moon-o");
-          themeIcon.classList.add("fa-sun-o");
-      }
-
-      // 3. 当用户点击开关时的逻辑
-      themeToggleBtn.addEventListener("click", function() {
-          // 切换网页的暗黑状态
-          document.body.classList.toggle("dark-mode");
-          
-          let theme = "light"; // 默认是白天
-          
-          // 如果现在是黑夜模式
-          if (document.body.classList.contains("dark-mode")) {
-              theme = "dark";
-              // 图标变成太阳（暗示点击可以回到白天）
-              themeIcon.classList.remove("fa-moon-o");
-              themeIcon.classList.add("fa-sun-o");
-          } else {
-              // 图标变回月亮
-              themeIcon.classList.remove("fa-sun-o");
-              themeIcon.classList.add("fa-moon-o");
-          }
-          
-          // 4. 将用户的选择保存到本地存储，下次打开依然有效
-          localStorage.setItem("theme", theme);
-      });
-  });
-</script>
-  </body>
-
-<!--
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-60071442-1', 'auto');
-  ga('send', 'pageview');
-</script>
--->
-
-<!--<script src="custom-pub.js"></script>-->
+     <div class="footer-col footer-col-1">
+      <ul class="contact-list">
+       <li>
+        Personal Email:
+       </li>
+       <li>
+        <a href="mailto:xinyufu431@gmail.com">
+         xinyufu431 [at] gmail.com
+        </a>
+       </li>
+      </ul>
+     </div>
+     <div class="footer-col footer-col-2">
+      <a aria-label="Google Scholar" class="icon-button github" href="https://scholar.google.com/citations?user=g7AuSWUAAAAJ&amp;hl=en" rel="noopener noreferrer" target="_blank">
+       <i class="ai ai-google-scholar-square icon-github">
+       </i>
+       <span>
+       </span>
+      </a>
+      <a aria-label="GitHub" class="icon-button github" href="https://github.com/Fluorine-Brian" rel="noopener noreferrer" target="_blank">
+       <i class="fa fa-github icon-github">
+       </i>
+       <span>
+       </span>
+      </a>
+      <a aria-label="Curriculum vitae" class="icon-button github" href="work/CV.pdf" rel="noopener noreferrer" target="_blank">
+       <i class="ai ai-cv icon-github">
+       </i>
+       <span>
+       </span>
+      </a>
+     </div>
+     <div class="footer-col footer-col-3">
+      <p class="text">
+       Last updated: October, 2026.
+      </p>
+     </div>
+    </div>
+   </div>
+  </footer>
+  <button aria-label="Back to top" class="back-to-top" hidden="" type="button">
+   ? Top
+  </button>
+  <script defer="" src="js/main.js">
+  </script>
+ </body>
 </html>
