@@ -1632,6 +1632,21 @@ div.paginate-container li:nth-last-child(2) a:after {
     overflow: auto
 }
 
+.contribution-note {
+    margin: -8px 0 28px;
+    color: #66758a;
+    font-size: 15px;
+}
+
+.paper-list > .pub {
+    padding: 18px 0;
+    margin-bottom: 28px;
+}
+
+.paper-list .pub-left > .intro-img {
+    height: 170px;
+}
+
 .pub {
     /* border-top: thin solid #c0c0c0; */
     /* radius: 15px; */
