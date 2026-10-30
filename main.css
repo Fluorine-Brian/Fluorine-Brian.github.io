@@ -1633,18 +1633,58 @@ div.paginate-container li:nth-last-child(2) a:after {
 }
 
 .contribution-note {
-    margin: -8px 0 28px;
+    margin: -8px 0 4px;
     color: #66758a;
     font-size: 15px;
 }
 
-.paper-list > .pub {
-    padding: 18px 0;
-    margin-bottom: 28px;
+.showcase-list > .pub {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 1.45rem 0;
+    margin: 0;
+    border-bottom: 1px solid #e3e8ee;
 }
 
-.paper-list .pub-left > .intro-img {
-    height: 170px;
+.showcase-list .pub-left {
+    float: none;
+    flex: 0 0 37%;
+    width: 37%;
+    margin: 0;
+}
+
+.showcase-list .pub-left > .intro-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    box-sizing: border-box;
+    border: 1px solid #e3e8ee;
+    border-radius: 3px;
+    object-fit: contain;
+}
+
+.showcase-list .pub-right {
+    float: none;
+    flex: 1;
+    min-width: 0;
+    width: auto;
+}
+
+@media screen and (max-width: 800px) {
+    .showcase-list > .pub {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.9rem;
+    }
+
+    .showcase-list .pub-left,
+    .showcase-list .pub-right {
+        flex: none;
+        width: 100%;
+        margin: 0;
+    }
 }
 
 .pub {
