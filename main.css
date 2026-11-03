@@ -2054,11 +2054,11 @@ div.paginate-container li:nth-last-child(2) a:after {
 .github-section .github-card {
     display: flex;
     flex-direction: column;
-    min-height: 170px;
+    min-height: 190px;
     box-sizing: border-box;
     border: 1px solid #e3e8ee;
     border-radius: 8px;
-    padding: 20px 22px;
+    padding: 22px 24px;
     background: #fff;
     color: #26394c;
     font-family: system-ui, sans-serif;
@@ -2073,7 +2073,7 @@ div.paginate-container li:nth-last-child(2) a:after {
 
 .github-section .repo-link {
     color: #183557;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.4;
     text-decoration: none;
     overflow-wrap: anywhere;
@@ -2096,9 +2096,9 @@ div.paginate-container li:nth-last-child(2) a:after {
 
 .github-section .description {
     flex: 1;
-    margin: 12px 0 16px;
+    margin: 14px 0 20px;
     color: #687482;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5;
 }
 
@@ -2106,16 +2106,20 @@ div.paginate-container li:nth-last-child(2) a:after {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 10px 22px;
+    gap: 14px 28px;
     color: #687482;
-    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
 }
 
 .github-section .repo-language,
 .github-section .meta a {
     display: inline-flex;
     align-items: center;
-    gap: 7px;
+    gap: 9px;
+    white-space: nowrap;
 }
 
 .github-section .meta a {
@@ -2124,12 +2128,24 @@ div.paginate-container li:nth-last-child(2) a:after {
 }
 
 .github-section .meta .fa {
-    font-size: 16px;
+    width: 18px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.github-section .stat-label {
+    margin-right: 2px;
+}
+
+.github-section .star-count,
+.github-section .fork-count {
+    font-weight: 400;
 }
 
 .github-section .dot {
-    width: 12px;
-    height: 12px;
+    flex: 0 0 13px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     background: #3572a5;
 }
