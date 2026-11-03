@@ -2043,91 +2043,122 @@ div.paginate-container li:nth-last-child(2) a:after {
     }
 }
 
-.card-container {
-    display: flex;
-    justify-content: center;
-    gap: 4px 2px;  /* row gap 24px, column gap 32px */
-    flex-wrap: wrap;
-    width: 940px; /* 控制最大宽度，2列布局 */
+.github-section .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
     margin: 0 auto;
-  }
-  
-  .github-card {
-    border: 1.5px solid #e5e7eb;
+}
+
+.github-section .github-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 170px;
+    box-sizing: border-box;
+    border: 1px solid #e3e8ee;
     border-radius: 8px;
-    padding: 16px;
-    background-color: white;
-    margin-bottom: 2px;
-    width: 430px;
+    padding: 20px 22px;
+    background: #fff;
+    color: #26394c;
     font-family: system-ui, sans-serif;
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .github-card a {
-    color: #1a1a1a;
+}
+
+.github-section .repo-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+}
+
+.github-section .repo-link {
+    color: #183557;
+    font-size: 17px;
+    line-height: 1.4;
     text-decoration: none;
-  }
-  
-  .github-card a:hover {
+    overflow-wrap: anywhere;
+}
+
+.github-section .repo-link:hover,
+.github-section .meta a:hover {
     color: #2563eb;
     text-decoration: underline;
-  }
-  
-  .github-card .repo-link {
-    font-weight: 500;
-    font-size: 14px;
-  }
-  
-  .github-card .label {
-    display: inline-block;
-    margin-left: 8px;
-    padding: 2px 8px;
+}
+
+.github-section .label {
+    padding: 2px 10px;
     border: 1px solid #d1d5db;
-    border-radius: 9999px;
-    font-size: 12px;
+    border-radius: 999px;
     color: #6b7280;
-  }
-  
-  .github-card .description {
-    margin-top: 8px;
-    font-size: 11px;
-    color: #6b7280;
-  }
-  
-  .github-card .meta {
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
     font-size: 13px;
-    color: #6b7280;
-  }
-  
-  .github-card .dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #2563eb;
-    border-radius: 50%;
-    margin-right: 6px;
-  }
-  
-  .github-card .meta a {
+    white-space: nowrap;
+}
+
+.github-section .description {
+    flex: 1;
+    margin: 12px 0 16px;
+    color: #687482;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.github-section .meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 22px;
+    color: #687482;
+    font-size: 14px;
+}
+
+.github-section .repo-language,
+.github-section .meta a {
     display: inline-flex;
     align-items: center;
-    margin-left: 16px;
-    color: #6b7280;
-  }
-  
-  .github-card .meta a:hover {
-    color: #2563eb;
-  }
-  
-  .github-card svg {
-    width: 16px;
-    height: 16px;
-    margin-right: 4px;
-  }
+    gap: 7px;
+}
+
+.github-section .meta a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.github-section .meta .fa {
+    font-size: 16px;
+}
+
+.github-section .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #3572a5;
+}
+
+.github-section [data-repo="Code-for-Digital-Image-Processing"] .dot {
+    background: #da5b0b;
+}
+
+@media screen and (max-width: 700px) {
+    .github-section .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+body.dark-mode .github-section .github-card {
+    background: #242424;
+    border-color: #444;
+    color: #e0e0e0;
+}
+
+body.dark-mode .github-section .description,
+body.dark-mode .github-section .meta,
+body.dark-mode .github-section .label {
+    color: #aaa;
+}
+
+body.dark-mode .github-section .label {
+    border-color: #555;
+}
 
   /* 新增的 CSS 规则，用于新闻滚动 */
 .news-scroll-container {
